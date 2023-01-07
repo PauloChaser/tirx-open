@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Benzin;
+  src: url("/fonts/Benzin-ExtraBold.eot");
+  src: local("Benzin ExtraBold"), local("Benzin-ExtraBold"),
+    url("/fonts/Benzin-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Benzin-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Benzin-ExtraBold.woff") format("woff"),
+    url("/fonts/Benzin-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Benzin;
+  src: url("/fonts/Benzin-Medium.eot");
+  src: local("Benzin Medium"), local("Benzin-Medium"),
+    url("/fonts/Benzin-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Benzin-Medium.woff2") format("woff2"),
+    url("/fonts/Benzin-Medium.woff") format("woff"),
+    url("/fonts/Benzin-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Benzin;
+  src: url("/fonts/Benzin-Bold.eot");
+  src: local("Benzin Bold"), local("Benzin-Bold"),
+    url("/fonts/Benzin-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Benzin-Bold.woff2") format("woff2"),
+    url("/fonts/Benzin-Bold.woff") format("woff"),
+    url("/fonts/Benzin-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Benzin;
+  src: url("/fonts/Benzin-Semibold.eot");
+  src: local("Benzin Semibold"), local("Benzin-Semibold"),
+    url("/fonts/Benzin-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Benzin-Semibold.woff2") format("woff2"),
+    url("/fonts/Benzin-Semibold.woff") format("woff"),
+    url("/fonts/Benzin-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Benzin;
+  src: url("/fonts/Benzin-Regular.eot");
+  src: local("Benzin Regular"), local("Benzin-Regular"),
+    url("/fonts/Benzin-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Benzin-Regular.woff2") format("woff2"),
+    url("/fonts/Benzin-Regular.woff") format("woff"),
+    url("/fonts/Benzin-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-Regular.eot");
+  src: url("/fonts/Stem-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-Regular.woff2") format("woff2"),
+    url("/fonts/Stem-Regular.woff") format("woff"),
+    url("/fonts/Stem-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-ExtraLight.eot");
+  src: url("/fonts/Stem-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-ExtraLight.woff2") format("woff2"),
+    url("/fonts/Stem-ExtraLight.woff") format("woff"),
+    url("/fonts/Stem-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-Thin.eot");
+  src: url("/fonts/Stem-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-Thin.woff2") format("woff2"),
+    url("/fonts/Stem-Thin.woff") format("woff"),
+    url("/fonts/Stem-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-Bold.eot");
+  src: url("/fonts/Stem-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-Bold.woff2") format("woff2"),
+    url("/fonts/Stem-Bold.woff") format("woff"),
+    url("/fonts/Stem-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-Medium.eot");
+  src: url("/fonts/Stem-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-Medium.woff2") format("woff2"),
+    url("/fonts/Stem-Medium.woff") format("woff"),
+    url("/fonts/Stem-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-SemiLight.eot");
+  src: url("/fonts/Stem-SemiLight.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-SemiLight.woff2") format("woff2"),
+    url("/fonts/Stem-SemiLight.woff") format("woff"),
+    url("/fonts/Stem-SemiLight.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Stem;
+  src: url("/fonts/Stem-Light.eot");
+  src: url("/fonts/Stem-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Stem-Light.woff2") format("woff2"),
+    url("/fonts/Stem-Light.woff") format("woff"),
+    url("/fonts/Stem-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

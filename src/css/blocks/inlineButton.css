@@ -1,0 +1,47 @@
+.inlineButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.inlineButton__text {
+  line-height: 1;
+  color: var(--white-dark);
+}
+
+.inlineButton__iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17px;
+}
+
+.inlineButton__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--sandal);
+
+  transition: fill 200ms ease;
+}
+
+.inlineButton:hover .inlineButton__icon {
+  fill: var(--white);
+}
+
+@media screen and (max-width: 1021px) {
+  .inlineButton__text {
+    font-size: 16px;
+  }
+
+  .inlineButton__iconWrapper {
+    margin-left: 10px;
+  }
+
+  .inlineButton__icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}

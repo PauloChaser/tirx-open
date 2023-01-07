@@ -1,0 +1,253 @@
+.Controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+}
+
+.Controls__help {
+  width: 27%;
+  height: 120px;
+  cursor: pointer;
+}
+
+.Controls__description {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-left: 1px solid #ffffff66;
+}
+
+.Controls__descriptionStep {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #eeeeee;
+  opacity: 0.6;
+  margin-right: 24px;
+}
+
+.Controls__descriptionText {
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #eeeeee;
+}
+
+.Controls__nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Controls__back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+  border-left: 1px solid #ffffff66;
+  border-right: 1px solid #ffffff66;
+
+  cursor: pointer;
+}
+
+.Controls__backIcon {
+  width: 36px;
+  height: 36px;
+  fill: #eeeeee;
+  transition: fill 200ms ease;
+}
+
+.Controls__back:hover .Controls__backIcon {
+  fill: var(--sandal);
+}
+
+.Controls__next {
+  width: 213px;
+  height: 100%;
+  background-color: var(--sandal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: background-color 200ms ease;
+}
+
+.Controls__nextText {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  transition: color 200ms ease;
+}
+
+.Controls__next:hover {
+  background-color: white;
+}
+
+.Controls__next:hover .Controls__nextText {
+  color: var(--sandal);
+}
+
+@media screen and (max-width: 1440px) {
+  .Controls {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*width: 100%;*/
+    height: 80px;
+  }
+
+  .Controls__help {
+    /*width: 27%;*/
+    height: 80px;
+  }
+
+  /*.Controls__description {*/
+  /*  height: 100%;*/
+  /*  display: flex;*/
+  /*  align-items: center;*/
+  /*  padding-left: 30px;*/
+  /*  border-left: 1px solid #ffffff66;*/
+  /*}*/
+
+  /*.Controls__descriptionStep {*/
+  /*  font-family: Stem, sans-serif;*/
+  /*  font-style: normal;*/
+  /*  font-weight: 350;*/
+  /*  font-size: 18px;*/
+  /*  line-height: 100%;*/
+  /*  text-align: center;*/
+  /*  color: #eeeeee;*/
+  /*  opacity: 0.6;*/
+  /*  margin-right: 24px;*/
+  /*}*/
+
+  .Controls__descriptionText {
+    /*font-family: "Benzin-Regular", sans-serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 18px;
+    /*line-height: 100%;*/
+    /*letter-spacing: 0.02em;*/
+    /*color: #eeeeee;*/
+  }
+
+  /*.Controls__nav {*/
+  /*  margin-left: auto;*/
+  /*  display: flex;*/
+  /*  align-items: center;*/
+  /*  height: 100%;*/
+  /*}*/
+
+  .Controls__back {
+    width: 80px;
+  }
+
+  .Controls__backIcon {
+    width: 32px;
+    height: 32px;
+    /*fill: #eeeeee;*/
+    /*transition: fill 200ms ease;*/
+  }
+
+  .Controls__next {
+    width: 170px;
+  }
+
+  .Controls__nextText {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .Controls {
+    height: 66px;
+  }
+
+  .Controls__help {
+    display: none;
+  }
+  .Controls__description {
+    display: none;
+  }
+
+  .Controls__nav {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Controls__back {
+    width: 50%;
+    border-left: none;
+  }
+
+  .Controls__backIcon {
+    width: 20px;
+    height: 20px;
+    /*fill: #eeeeee;*/
+    /*transition: fill 200ms ease;*/
+  }
+
+  .Controls__next {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Controls {
+    height: 55px;
+  }
+
+  .Controls__help {
+    display: none;
+  }
+  .Controls__description {
+    display: none;
+  }
+
+  .Controls__nav {
+    height: 55px;
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  }
+
+  /*.Controls__back {*/
+  /*  width: 50%;*/
+  /*  border-left: none;*/
+  /*}*/
+
+  /*.Controls__backIcon {*/
+  /*  width: 20px;*/
+  /*  height: 20px;*/
+  /*  !*fill: #eeeeee;*!*/
+  /*  !*transition: fill 200ms ease;*!*/
+  /*}*/
+
+  /*.Controls__next {*/
+  /*  width: 50%;*/
+  /*}*/
+
+  .Controls__nextText {
+    font-size: 16px;
+    font-weight: 350;
+  }
+}

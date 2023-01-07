@@ -1,0 +1,107 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+@import "vars.css";
+
+@import "blocks/container.css";
+@import "blocks/button.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/title.css";
+@import "blocks/arrows.css";
+@import "blocks/overlay.css";
+@import "blocks/cookie.css";
+@import "blocks/text.css";
+@import "blocks/circleArrow.css";
+@import "blocks/circleButton.css";
+@import "blocks/asideCardsInfo.css";
+@import "blocks/cards.css";
+@import "blocks/separatedCard.css";
+@import "blocks/mission.css";
+@import "blocks/scrollDownBtn.css";
+@import "blocks/advantages.css";
+@import "blocks/modals.css";
+@import "blocks/popUp.css";
+@import "blocks/banner.css";
+@import "blocks/form.css";
+@import "blocks/select.css";
+@import "blocks/input.css";
+@import "blocks/inlineButton.css";
+@import "blocks/pagination.css";
+@import "blocks/sandal.css";
+@import "blocks/contacts.css";
+@import "blocks/closeButton.css";
+@import "blocks/recommended.css";
+@import "blocks/cardProduct.css";
+@import "blocks/notFound.css";
+
+@import "sections/header.css";
+@import "sections/mainMenu.css";
+@import "sections/leftPanel.css";
+@import "sections/mainBanner.css";
+@import "sections/goToConfigurator.css";
+@import "sections/mainOffer.css";
+@import "sections/mainMission.css";
+@import "sections/news.css";
+@import "sections/mainProducts.css";
+@import "sections/imageSlider.css";
+@import "sections/mainAdvantages.css";
+@import "sections/preloader.css";
+@import "sections/footer.css";
+@import "sections/product.css";
+@import "sections/turnkeyBanner.css";
+@import "sections/ourBenefit.css";
+@import "sections/consultation.css";
+@import "sections/ourProducts.css";
+@import "sections/otherLinks.css";
+@import "sections/pageSingle.css";
+@import "sections/catalog.css";
+@import "sections/warranty.css";
+@import "sections/serviceRequest.css";
+@import "sections/projects.css";
+
+@import "components/Constructor.css";
+@import "components/Step.css";
+@import "components/buttonDouble.css";
+@import "components/radioInputs.css";
+@import "components/radio.css";
+@import "components/constructorCircleButton.css";
+@import "components/checkboxLine.css";
+@import "components/checkboxLineInputs.css";
+@import "components/checkboxButton.css";
+@import "components/checkboxMarkInputs.css";
+@import "components/checkboxMark.css";
+@import "components/ProjectOptions.css";
+@import "components/ProjectOption.css";
+@import "components/formFree.css";
+@import "components/getConsultation.css";
+@import "components/textarea.css";
+@import "components/checkbox.css";
+@import "components/inputBorder.css";
+@import "components/Area.css";
+@import "components/Controls.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Stem, sans-serif;
+  box-sizing: border-box;
+
+  background-color: var(--bg);
+  line-height: 1.15;
+
+  --swiper-theme-color: var(--sandal);
+}
+
+input {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 100vw;
+}

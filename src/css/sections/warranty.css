@@ -1,0 +1,343 @@
+.warranty {
+  margin-bottom: 180px;
+  margin-top: 80px;
+  padding-top: 120px;
+  background-image: url("img/ourProducts-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.warranty__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.warranty__heading {
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+.warranty__headingSmallTitle {
+  display: inline-block;
+  /*font-size: 20px;*/
+  line-height: 1;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 35px;
+}
+
+.warranty__headingTitle {
+  max-width: 90%;
+}
+
+.warranty__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.warranty__bottomAsideCard {
+  width: 31%;
+  margin-right: 30px;
+}
+
+.warranty__bottomCards .cards__item:first-child {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1700px) {
+  .warranty__bottomAsideCard .asideCardsInfo__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .warranty__row {
+    max-width: 1440px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__button {
+    margin-top: auto;
+  }
+
+  .warranty__bottomCards .cards__item:first-child {
+    margin-right: 20px;
+  }
+
+  .warranty__bottomCards .cards__item {
+    max-width: 430px;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .warranty__row {
+    /*padding-left: 80px;*/
+  }
+
+  .warranty__bottomAsideCard {
+    width: 30%;
+    margin-top: -40px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .warranty__bottomCards {
+    width: 100%;
+  }
+
+  .warranty__bottomCards .cards__item {
+    width: unset;
+    flex-shrink: unset;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 400px;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  /*.warranty__bottomAsideCard .asideCardsInfo__title {*/
+  /*  font-size: 24px;*/
+  /*  !*margin-bottom: 15px;*!*/
+  /*}*/
+
+  /*.warranty__bottomAsideCard .asideCardsInfo__text {*/
+  /*  font-size: 18px;*/
+  /*}*/
+
+  /*.warranty__bottomCards .cards__item {*/
+  /*  min-width: 350px;*/
+  /*}*/
+  /*.warranty__bottomCards .cards__item:first-child {*/
+  /*  margin-right: 20px;*/
+  /*}*/
+
+  .warranty__bottom {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .warranty__bottomAsideCard {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 61px;
+    margin-top: 0;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__button {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .warranty {
+    margin-bottom: 120px;
+    margin-top: 78px;
+    padding-top: 32px;
+    background-size: 500px 472px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .warranty__row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .warranty__heading {
+    margin-bottom: 100px;
+  }
+
+  .warranty__headingSmallTitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .warranty__headingTitle {
+    max-width: 95%;
+    font-size: 24px;
+    line-height: 1.45;
+  }
+
+  .warranty__bottom {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .warranty__bottomAsideCard {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 61px;
+    margin-top: 0;
+  }
+
+  .warranty__bottomCards {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .warranty__bottomCards .cards__item:first-child {
+    margin-right: 20px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__title {
+    font-size: 24px;
+    line-height: 1.45;
+    max-width: 80%;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .warranty__bottomCards .cards__item {
+    min-width: 379px;
+    margin-right: 0;
+  }
+  .warranty__bottomCards .cards__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__button {
+    margin-top: 50px;
+  }
+
+  .warranty__bottomCards {
+    padding-bottom: 40px;
+  }
+
+  .warranty__bottom .simplebar-scrollbar::before {
+    background-color: var(--sandal);
+    height: 3px;
+    border-radius: 0;
+  }
+
+  .warranty__bottom .simplebar-track {
+    right: 40px;
+  }
+
+  .warranty__bottom .simplebar-track.simplebar-horizontal {
+    display: none;
+  }
+
+  .warranty__bottom .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    height: 3px;
+    min-width: 2px;
+    top: 0;
+  }
+
+  .warranty__bottom
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar:before {
+    left: 1px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .warranty__bottomCards .cards__item {
+    flex: unset;
+  }
+
+  .warranty__bottom .simplebar-track.simplebar-horizontal {
+    display: initial;
+    left: 40px;
+    height: 3px;
+    background-color: #3d3d3d;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .warranty {
+    margin-bottom: 80px;
+    margin-top: 124px;
+    padding-top: 0;
+    background-size: 330px 310px;
+  }
+
+  .warranty__row {
+    padding-left: 0;
+  }
+
+  .warranty__heading {
+    text-align: center;
+    margin-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .warranty__headingSmallTitle {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .warranty__headingTitle {
+    max-width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .warranty__bottomAsideCard {
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .warranty__bottomCards {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .warranty__bottomCards .cards__item:first-child {
+    margin-right: 20px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__title {
+    font-size: 20px;
+    line-height: 1.45;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__text {
+    font-size: 16px;
+  }
+
+  .warranty__bottomAsideCard .asideCardsInfo__button {
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  .warranty__bottomCards .cards__item {
+    min-width: 315px;
+  }
+
+  .warranty__bottom .simplebar-scrollbar::before {
+    height: 2px;
+  }
+
+  .warranty__bottom .simplebar-track {
+    right: 30px;
+  }
+
+  .warranty__bottom .simplebar-track.simplebar-horizontal {
+    left: 30px;
+    height: 2px;
+  }
+
+  .warranty__bottom .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    height: 2px;
+  }
+
+  .warranty__bottom
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar:before {
+    left: 0;
+  }
+}

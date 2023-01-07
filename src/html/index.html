@@ -1,0 +1,1251 @@
+<html>
+<head>
+  <link rel="icon" href="data:;base64,=">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Главная страница</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="container header js-header">
+    <div class="header__inner">
+      <div class="header__burger js-burger">
+        <div class="header__burgerLine"></div>
+      </div>
+      <div class="header__row">
+        <div class="header__logo">
+          <a href="/index.html">
+            <svg class="header__logoIcon">
+              <use href="./spritemap.svg#icon-logo" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="header__menu js-header-menu">
+          <nav class="header__menuNav">
+            <ul class="header__menuList text">
+              <li class="header__menuLinkItem">
+                <a href="/about.html" class="header__menuLink">О&nbsp;компании</a>
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="#" class="header__menuLink header__menuLink--withSub">
+                  Решения
+                  <svg class="header__menuLinkIcon">
+                    <use href="./spritemap.svg#icon-menuLink-triangle" />
+                  </svg>
+                </a>
+                <ul class="header__menuSubList">
+                  <li class="header__menuSubListItem text">
+                    <span class="header__menuSubListLinkNum">01</span>
+                    <a
+                      href="solutions-object-turnkey.html"
+                      class="header__menuSubListLink"
+                    >
+                      Стрелковый <br />объект под ключ
+                    </a>
+                  </li>
+                  <li class="header__menuSubListItem text">
+                    <span class="header__menuSubListLinkNum">02</span>
+                    <a
+                      href="solutions-equipment.html"
+                      class="header__menuSubListLink"
+                    >
+                      Оснащение <br />стрелковых клубов
+                    </a>
+                  </li>
+                  <li class="header__menuSubListItem text">
+                    <span class="header__menuSubListLinkNum">03</span>
+                    <a
+                      href="solutions-management.html"
+                      class="header__menuSubListLink"
+                    >
+                      Управление <br />стрелковыми клубами
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/catalog.html" class="header__menuLink">Продукция</a>
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/constructor.html" class="header__menuLink"
+                >Конструктор тира</a
+                >
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/news.html" class="header__menuLink">Новости</a>
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/contacts.html" class="header__menuLink">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__right">
+          <!--      <div class="header__search">-->
+          <!--        <svg class="header__searchIcon">-->
+          <!--          <use href="./spritemap.svg#icon-search" />-->
+          <!--        </svg>-->
+          <!--      </div>-->
+          <div class="header__phone">
+            <a
+              href="mailto:docs@tir-x.ru"
+              class="header__phoneLink text text--fz20"
+            >
+              docs@tir-x.ru
+              <!--              +7 (909) 007- 83-73-->
+            </a>
+            <span class="header__phoneText text">Электронная почта</span>
+          </div>
+        </div>
+        <div class="mainMenu__closeButton closeButton js-main-menu-close">
+          <svg class="closeButton__icon">
+            <use href="./spritemap.svg#icon-close" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container mainMenu js-main-menu">
+    <div class="container__row mainMenu__container">
+      <div class="mainMenu__wrapper">
+        <div class="mainMenu__top">
+          <div class="mainMenu__logo">
+            <a href="/index.html">
+              <svg class="mainMenu__logoIcon">
+                <use href="./spritemap.svg#icon-logo" />
+              </svg>
+            </a>
+          </div>
+          <div class="mainMenu__closeButton closeButton js-main-menu-close">
+            <svg class="closeButton__icon">
+              <use href="./spritemap.svg#icon-close" />
+            </svg>
+          </div>
+        </div>
+        <div class="mainMenu__bottom">
+          <div class="mainMenu__links">
+            <div class="mainMenu__linksHalf">
+              <a href="/about.html" class="mainMenu__link">О&nbsp;компании</a>
+              <div
+                class="mainMenu__link js-main-menu-toggle"
+                data-container="solutions">
+                Решения
+                <svg class="mainMenu__linkIcon">
+                  <use href="./spritemap.svg#icon-menu-triangle-big" />
+                </svg>
+              </div>
+              <div class="mainMenu__linkSubLinks" id="solutions">
+                <a
+                  href="solutions-object-turnkey.html"
+                  class="mainMenu__linkSubLink">
+                  <span class="mainMenu__linkSubLinkNum text text--fz20">01</span>
+                  <span class="mainMenu__linkSubLinkItem text">Стрелковый объект под ключ</span>
+                </a>
+                <a href="solutions-equipment.html"
+                   class="mainMenu__linkSubLink">
+                  <span class="mainMenu__linkSubLinkNum text text--fz20">02</span>
+                  <span class="mainMenu__linkSubLinkItem text">Оснащение стрелковых клубов</span>
+                </a>
+                <a href="solutions-management.html"
+                   class="mainMenu__linkSubLink">
+                  <span class="mainMenu__linkSubLinkNum text text--fz20">03</span>
+                  <span class="mainMenu__linkSubLinkItem text">Управление стрелковыми клубами</span>
+                </a>
+              </div>
+              <a href="catalog.html" class="mainMenu__link">Продукция</a>
+              <a href="constructor.html" class="mainMenu__link">Конструктор тира</a>
+            </div>
+            <div class="mainMenu__linksHalf">
+              <a href="projects.html" class="mainMenu__link">Проекты</a>
+              <a href="warranty.html" class="mainMenu__link">Гарантия и&nbsp;сервис</a>
+              <a href="news.html" class="mainMenu__link">Новости</a>
+              <a href="contacts.html" class="mainMenu__link">Контакты</a>
+              <div class="mainMenu__contacts">
+                <div
+                  class="mainMenu__contactsItem mainMenu__contactsItem--address">
+                  <span class="mainMenu__contactsItemTitle text">Адрес</span>
+                  <a
+                    href="/contacts.html"
+                    class="mainMenu__contactsItemLink text">
+                    101000, г. Москва
+                    <br />Лубянский проезд 27/1, с.1пом.13</a>
+                </div>
+                <div class="mainMenu__contactsItem">
+                  <span class="mainMenu__contactsItemTitle text">Контакты</span>
+                  <a
+                    href="tel:+79090078373"
+                    class="mainMenu__contactsItemLink mainMenu__contactsItemLink--phone text">
+                    +7 (909) 007- 83-73
+                  </a>
+                  <a
+                    href="mailto:Promo@mail.com"
+                    class="mainMenu__contactsItemLink text">
+                    Promo@mail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="leftPanel js-left-panel">
+    <div class="leftPanel__links">
+      <a href="projects.html" class="leftPanel__link text"><span>Наши проекты</span></a>
+      <a href="#consultation" class="leftPanel__link text js-open-modal"><span>Получить консультацию</span></a>
+    </div>
+  </div>
+
+  <section class="container mainBanner js-main-banner">
+    <div class="container__row mainBanner__row">
+      <div class="mainBanner__wrapper">
+        <h1 class="mainBanner__title title">
+          <span class="title sandal">ТИРЭКС</span> &mdash;
+          проектируем <br />и&nbsp;строим стрелковые <br />клубы с&nbsp;2010
+          года
+        </h1>
+        <p class="mainBanner__text text">
+          Ищете надежного подрядчика для модернизации, реконструкции или
+          создания стрелкового объекта <br>&nbsp;&laquo;под&nbsp;ключ&raquo;?
+        </p>
+        <a href="/about.html"
+           class="mainBanner__btn buttonDouble buttonDouble--m">
+<span class="buttonDouble__arrowWrapper">
+<svg class="buttonDouble__arrowIcon">
+<use href="./spritemap.svg#icon-buttonDouble-arrow" />
+</svg>
+</span>
+          <span class="buttonDouble__text text">О&nbsp;компании</span>
+        </a>
+        <a href="#offer"
+           class="mainBanner__scrollDown scrollDownBtn js-scroll-down">
+          <span class="scrollDownBtn__text text text--fz20">Листать вниз</span>
+          <div class="scrollDownBtn__icons">
+            <svg class="scrollDownBtn__iconsArrow">
+              <use href="./spritemap.svg#icon-arrow-down-big" />
+            </svg>
+
+            <svg class="scrollDownBtn__iconsCircle">
+              <use href="./spritemap.svg#icon-animated-small-circle" />
+            </svg>
+            <svg class="scrollDownBtn__iconsCircle scrollDownBtn__iconsCircle--animated">
+              <use href="./spritemap.svg#icon-animated-small-circle" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="offer" class="container mainOffer">
+    <div class="container__row">
+      <div class="mainOffer__wrapper">
+        <div class="mainOffer__left js-main-offer-left">
+          <span class="mainOffer__smallHeading text text--fz20">Что мы&nbsp;предлагаем?</span>
+          <h2 class="mainOffer__title title title--h2">
+            ПРОФЕССИОНАЛЬНАЯ <br />КОМПЕТЕНТНОСТЬ&nbsp;–<br />
+            <span class="sandal">ЗАЛОГ УСПЕХА</span>
+          </h2>
+          <p class="mainOffer__description text text--fz20">
+            Мы&nbsp;эксперты в&nbsp;области проектирования, строительства, оснащения и
+            управления стрелковыми клубами.
+          </p>
+        </div>
+        <div class="mainOffer__right">
+          <div class="mainOffer__cards">
+            <div class="mainOffer__card">
+              <h3 class="mainOffer__cardTitle title title--h3">
+                СТРЕЛКОВЫЙ ОБЪЕКТ <br />ПОД КЛЮЧ
+              </h3>
+              <div class="mainOffer__cardCircle">
+                <img src="img/mainOffer-card-1.jpg"
+                     srcset="img/mainOffer-card-1.jpg        1x,
+                        img/mainOffer-card-1-retina.jpg 2x"
+                     alt="" class="mainOffer__cardCircleImg" />
+              </div>
+              <div class="mainOffer__cardHidden">
+                <img
+                  src="img/mainOffer-card-1.jpg"
+                  srcset="
+                        img/mainOffer-card-1.jpg        1x,
+                        img/mainOffer-card-1-retina.jpg 2x
+                      "
+                  alt=""
+                  class="mainOffer__cardHiddenImg"
+                />
+                <p class="mainOffer__cardHiddenText text text--fz22">
+                  Мы&nbsp;возьмем на&nbsp;себя все вопросы, связанные с&nbsp;созданием
+                  стрелкового клуба&nbsp;&mdash; от&nbsp;проектирования до&nbsp;сдачи объекта в
+                  эксплуатацию.
+                </p>
+              </div>
+              <span class="mainOffer__cardNum">01</span>
+              <a href="#" class="mainOffer__cardOpenBtn circleButton">
+<span class="circleButton__text text text--fz20"
+>Подробнее</span
+>
+                <div class="circleButton__iconWrapper">
+                  <svg class="circleButton__icon">
+                    <use href="./spritemap.svg#icon-plus" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="mainOffer__card">
+              <h3 class="mainOffer__cardTitle title title--h3">
+                ОСНАЩЕНИЕ <br />СТРЕЛКОВЫХ КЛУБОВ
+              </h3>
+              <div class="mainOffer__cardCircle">
+                <img
+                  src="img/mainOffer-card-2.jpg"
+                  srcset="
+                        img/mainOffer-card-2.jpg        1x,
+                        img/mainOffer-card-2-retina.jpg 2x
+                      "
+                  alt=""
+                  class="mainOffer__cardCircleImg"
+                />
+              </div>
+              <div class="mainOffer__cardHidden">
+                <img
+                  src="img/mainOffer-card-2.jpg"
+                  srcset="
+                        img/mainOffer-card-2.jpg        1x,
+                        img/mainOffer-card-2-retina.jpg 2x
+                      "
+                  alt=""
+                  class="mainOffer__cardHiddenImg"
+                />
+                <p class="mainOffer__cardHiddenText text text--fz22">
+                  Мы&nbsp;возьмем на&nbsp;себя все вопросы, связанные с&nbsp;созданием
+                  стрелкового клуба&nbsp;&mdash; от&nbsp;проектирования до&nbsp;сдачи объекта в
+                  эксплуатацию.
+                </p>
+              </div>
+              <span class="mainOffer__cardNum">02</span>
+              <a href="#" class="mainOffer__cardOpenBtn circleButton">
+<span class="circleButton__text text text--fz20"
+>Подробнее</span
+>
+                <div class="circleButton__iconWrapper">
+                  <svg class="circleButton__icon">
+                    <use href="./spritemap.svg#icon-plus" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="mainOffer__card">
+              <h3 class="mainOffer__cardTitle title title--h3">
+                УПРАВЛЕНИЕ <br />СТРЕЛКОВЫМИ КЛУБАМИ
+              </h3>
+              <div class="mainOffer__cardCircle">
+                <img
+                  src="img/mainOffer-card-3.jpg"
+                  srcset="
+                        img/mainOffer-card-3.jpg        1x,
+                        img/mainOffer-card-3-retina.jpg 2x
+                      "
+                  alt=""
+                  class="mainOffer__cardCircleImg"
+                />
+              </div>
+              <div class="mainOffer__cardHidden">
+                <img
+                  src="img/mainOffer-card-3.jpg"
+                  srcset="
+                        img/mainOffer-card-3.jpg        1x,
+                        img/mainOffer-card-3-retina.jpg 2x
+                      "
+                  alt=""
+                  class="mainOffer__cardHiddenImg"
+                />
+                <p class="mainOffer__cardHiddenText text text--fz22">
+                  Мы&nbsp;возьмем на&nbsp;себя все вопросы, связанные с&nbsp;созданием
+                  стрелкового клуба&nbsp;&mdash; от&nbsp;проектирования до&nbsp;сдачи объекта в
+                  эксплуатацию.
+                </p>
+              </div>
+              <span class="mainOffer__cardNum">03</span>
+              <a href="#" class="mainOffer__cardOpenBtn circleButton">
+<span class="circleButton__text text text--fz20"
+>Подробнее</span
+>
+                <div class="circleButton__iconWrapper">
+                  <svg class="circleButton__icon">
+                    <use href="./spritemap.svg#icon-plus" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mainMission js-target">
+    <div class="container__row">
+      <div class="mission js-mission">
+        <div class="mission__top">
+<span class="mission__smallHeading text text--fz20"
+>Наша миссия</span
+>
+          <h2 class="mission__title title title--h2">
+              <span class="sandal">Решать задачи</span>
+            &nbsp;<br/>проектирования, строительства, реконструкции,
+            оборудования и&nbsp;эксплуатации стрелковых объектов и&nbsp;их&nbsp;инженерной
+            инфраструктуры
+          </h2>
+        </div>
+        <div class="mission__bottom">
+          <div class="mission__central">
+<span class="mission__centralText text text--fz20"
+>Наши цели</span
+>
+            <div class="mission__centralLogo">
+              <svg class="mission__centralLogoIcon">
+                <use href="./spritemap.svg#icon-logo" />
+              </svg>
+            </div>
+            <div class="mission__point mission__point--one">
+              <span class="mission__pointNum text text--fz20">01</span>
+              <div class="mission__pointDescription text">
+                Собирать, детализировать, структурировать и&nbsp;предоставлять всю
+                необходимую и&nbsp;достаточную информацию по&nbsp;задаче (потребности)
+                Заказчика с&nbsp;максимальным качеством и&nbsp;в&nbsp;минимальные сроки
+              </div>
+            </div>
+            <div class="mission__point mission__point--two">
+              <span class="mission__pointNum text text--fz20">02</span>
+              <div class="mission__pointDescription text">
+                Использовать современные методики, лучшую мировую практику,
+                международные и&nbsp;российские стандарты и&nbsp;нормативы на&nbsp;всех
+                этапах своей работы
+              </div>
+            </div>
+            <div class="mission__point mission__point--three">
+              <span class="mission__pointNum text text--fz20">03</span>
+              <div class="mission__pointDescription text">
+                Формировать комплексные, полностью законченные решения &laquo;под
+                ключ&raquo;, которые позволят Заказчику пользоваться полученными
+                результатами сразу, без необходимости каких-либо&nbsp;доработок на
+                протяжении всего запланированного жизненного цикла объекта
+              </div>
+            </div>
+            <div class="mission__point mission__point--four">
+              <span class="mission__pointNum text text--fz20">04</span>
+              <div class="mission__pointDescription text">
+                Создавать современную материально-техническую базу стрелкового
+                спорта, тем&nbsp;самым популяризируя данный вид спорта
+              </div>
+            </div>
+          </div>
+          <div class="mission__circles">
+            <svg>
+              <defs>
+
+                <linearGradient id="gradient1" x1="499.127" y1="250" x2="0.148034" y2="250"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="rotate(90)">
+                  <stop offset="0.546875" stop-color="#AC8B65" stop-opacity="0.8" />
+                  <stop offset="1" stop-color="#AC8B65" stop-opacity="0" />
+                </linearGradient>
+
+                <linearGradient id="gradient2" x1="698.924" y1="332" x2="0.353341" y2="332"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="rotate(90)">
+                  <stop offset="0.546875" stop-color="#AC8B65" stop-opacity="0.8" />
+                  <stop offset="1" stop-color="#AC8B65" stop-opacity="0" />
+                </linearGradient>
+
+
+                <linearGradient id="gradient3" x1="898.719" y1="442.667" x2="0.556756" y2="442.667"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="rotate(90)">
+                  <stop offset="0.546875" stop-color="#AC8B65" stop-opacity="0.8" />
+                  <stop offset="1" stop-color="#AC8B65" stop-opacity="0" />
+                </linearGradient>
+
+
+                <linearGradient id="gradient4" x1="1098.52" y1="550" x2="0.761941" y2="550"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="rotate(90)">
+                  <stop offset="0.546875" stop-color="#AC8B65" stop-opacity="0.8" />
+                  <stop offset="1" stop-color="#AC8B65" stop-opacity="0" />
+                </linearGradient>
+
+
+                <linearGradient id="gradient5" x1="1326.28" y1="664" x2="0.993387" y2="664"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="rotate(90)">
+                  <stop offset="0.546875" stop-color="#AC8B65" stop-opacity="0.8" />
+                  <stop offset="1" stop-color="#AC8B65" stop-opacity="0" />
+                </linearGradient>
+
+              </defs>
+            </svg>
+            <svg class="mission__circlesItem mission__circlesItem--first" stroke="url(#gradient5)">
+              <use href="./spritemap.svg#icon-animated-circle" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--first">
+              <use href="./spritemap.svg#icon-mission-num-1" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--firstBottom">
+              <use href="./spritemap.svg#icon-mission-num-1" />
+            </svg>
+            <svg class="mission__circlesItem mission__circlesItem--second" stroke="url(#gradient4)">
+              <use href="./spritemap.svg#icon-animated-circle" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--second">
+              <use href="./spritemap.svg#icon-mission-num-2" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--secondBottom">
+              <use href="./spritemap.svg#icon-mission-num-2" />
+            </svg>
+            <svg class="mission__circlesItem mission__circlesItem--third" stroke="url(#gradient3)">
+              <use href="./spritemap.svg#icon-animated-circle" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--third">
+              <use href="./spritemap.svg#icon-mission-num-3" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--thirdBottom">
+              <use href="./spritemap.svg#icon-mission-num-3" />
+            </svg>
+            <svg class="mission__circlesItem mission__circlesItem--fourth" stroke="url(#gradient2)">
+              <use href="./spritemap.svg#icon-animated-circle" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--fourth">
+              <use href="./spritemap.svg#icon-mission-num-4" />
+            </svg>
+            <svg class="mission__circlesNum mission__circlesNum--fourthBottom">
+              <use href="./spritemap.svg#icon-mission-num-4" />
+            </svg>
+            <svg class="mission__circlesItem mission__circlesItem--fifth" stroke="url(#gradient1)">
+              <use href="./spritemap.svg#icon-animated-circle" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mainProducts">
+    <div class="container__row mainProducts__row container__row--noPR">
+      <div class="mainProducts__wrapper">
+        <div class="mainProducts__left">
+          <div class="asideCardsInfo">
+            <span class="asideCardsInfo__smallHeading text text--fz20">Наша продукция</span>
+            <h2 class="asideCardsInfo__title title title--h2">
+              <span class="title title--h2 title--sandal">новейшее оборудование</span> <br />для стрелковых клубов
+            </h2>
+            <p class="asideCardsInfo__text text">
+              В&nbsp;нашем каталоге представлено самое новейшее оборудование для
+              стрелковых клубов и&nbsp;многое другое
+            </p>
+            <div class="asideCardsInfo__arrows arrows">
+              <div class="circleArrow circleArrow--left js-main-product-prev">
+                <svg class="circleArrow__icon">
+                  <use href="./spritemap.svg#icon-arrow-circle" />
+                </svg>
+              </div>
+              <div class="circleArrow circleArrow--right js-main-product-next">
+                <svg class="circleArrow__icon">
+                  <use href="./spritemap.svg#icon-arrow-circle" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainProducts__items cards js-main-products-wrapper js-main-products-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-1.jpg"
+                  srcset="
+                        img/production-card-1.jpg        1x,
+                        img/production-card-1-retina.jpg 2x
+                      "
+                  alt="card"
+                />
+              </div>
+              <div class="cards__itemBottom">
+                <a
+                  href="catalog.html"
+                  class="cards__itemBtn circleButton circleButton--expanded"
+                >
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3 class="cards__itemTitle title title--h3">
+                  мишени
+<!--                  <br />для тактической стрельбы-->
+                </h3>
+                <span class="cards__itemNum text text--fz22">01</span>
+              </div>
+            </div>
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-2.jpg"
+                  srcset="
+                        img/production-card-2.jpg        1x,
+                        img/production-card-2-retina.jpg 2x
+                      "
+                  alt="card"
+                />
+              </div>
+              <div class="cards__itemBottom">
+                <a
+                  href="catalog.html"
+                  class="cards__itemBtn circleButton circleButton--expanded "
+                >
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3 class="cards__itemTitle title title--h3">
+                  пулеулавлеватели различных конструкций
+                </h3>
+                <span class="cards__itemNum text text--fz22">02</span>
+              </div>
+            </div>
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-3.jpg"
+                  srcset="
+                        img/production-card-3.jpg        1x,
+                        img/production-card-3-retina.jpg 2x
+                      "
+                  alt="card"
+                />
+              </div>
+              <div class="cards__itemBottom">
+                <a
+                  href="catalog.html"
+                  class="cards__itemBtn circleButton circleButton--expanded "
+                >
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3 class="cards__itemTitle title title--h3">
+                  оборудование для кхо и&nbsp;кво
+                </h3>
+                <span class="cards__itemNum text text--fz22">03</span>
+              </div>
+            </div>
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-4.jpg"
+                  srcset="
+                            img/production-card-4.jpg        1x,
+                            img/production-card-4-retina.jpg 2x"
+                  alt="card" />
+              </div>
+              <div class="cards__itemBottom">
+                <a
+                  href="#shooting-targets"
+                  class="cards__itemBtn circleButton circleButton--expanded js-popUp-open">
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3
+                  class="cards__itemTitle cards__itemTitle--wide title title--h3">
+                  системы контроля и&nbsp;управления <br />мишенной установкой
+                </h3>
+                <span class="cards__itemNum text text--fz22">04</span>
+              </div>
+            </div>
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-5.jpg"
+                  srcset="
+                            img/production-card-5.jpg        1x,
+                            img/production-card-5-retina.jpg 2x"
+                  alt="card" />
+              </div>
+              <div class="cards__itemBottom">
+                <a href="#shooting-targets"
+                   class="cards__itemBtn circleButton circleButton--expanded js-popUp-open">
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3
+                  class="cards__itemTitle cards__itemTitle--wide title title--h3">
+                  броневая <br />и&nbsp;антирикошетная защита конструкций
+                </h3>
+                <span class="cards__itemNum text text--fz22">05</span>
+              </div>
+            </div>
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-6.jpg"
+                  srcset="
+                            img/production-card-6.jpg        1x,
+                            img/production-card-6-retina.jpg 2x"
+                  alt="card" />
+              </div>
+              <div class="cards__itemBottom">
+                <a href="#shooting-targets"
+                   class="cards__itemBtn circleButton circleButton--expanded js-popUp-open">
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3 class="cards__itemTitle title title--h3">Вентиляция</h3>
+                <span class="cards__itemNum text text--fz22">06</span>
+              </div>
+            </div>
+            <div class="swiper-slide cards__item">
+              <div class="cards__itemImgWrapper">
+                <img
+                  class="cards__itemImg"
+                  src="img/production-card-7.jpg"
+                  srcset="
+                            img/production-card-7.jpg        1x,
+                            img/production-card-7-retina.jpg 2x
+                          "
+                  alt="card"
+                />
+              </div>
+              <div class="cards__itemBottom">
+                <a
+                  href="#shooting-targets"
+                  class="cards__itemBtn circleButton circleButton--expanded js-popUp-open"
+                >
+                  <div class="circleButton__iconWrapper">
+                    <svg class="circleButton__icon">
+                      <use href="./spritemap.svg#icon-plus" />
+                    </svg>
+                  </div>
+                  <span class="circleButton__text text">Подробнее</span>
+                </a>
+                <h3 class="cards__itemTitle title title--h3">Освещение</h3>
+                <span class="cards__itemNum text text--fz22">07</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mainAdvantages js-advantages">
+    <div class="container__row mainAdvantages--row">
+      <div class="mainAdvantages__wrapper advantages">
+        <div class="advantages__bgImages js-advantages-bgs">
+          <div class="advantages__bgImage">
+            <img
+              src="img/advantages-img-1.jpg"
+              srcset="
+                    img/advantages-img-1.jpg 1x,
+                    img/advantages-img-1-retina.jpg 2x
+                  "
+              alt=""
+              class="advantages__bgImageItem"
+            />
+          </div>
+          <div class="advantages__bgImage">
+            <img
+              src="img/advantages-img-2.png"
+              srcset="
+                    img/advantages-img-2.png 1x,
+                    img/advantages-img-2.png 2x
+                  "
+              alt=""
+              class="advantages__bgImageItem"
+            />
+          </div>
+          <div class="advantages__bgImage">
+            <img
+              src="img/advantages-img-3.png"
+              srcset="
+                    img/advantages-img-3.png 1x,
+                    img/advantages-img-3.png 2x
+                  "
+              alt=""
+              class="advantages__bgImageItem"
+            />
+          </div>
+          <div class="advantages__bgImage">
+            <img
+              src="img/advantages-img-4.png"
+              srcset="
+                    img/advantages-img-4.png 1x,
+                    img/advantages-img-4.png 2x
+                  "
+              alt=""
+              class="advantages__bgImageItem"
+            />
+          </div>
+        </div>
+
+        <div class="advantages__top">
+          <div class="advantages__titles">
+                <span class="advantages__smallHeading text text--fz20">
+                  Наши преимущества
+                </span>
+            <h2 class="advantages__title title title--h2">
+              Почему <br /><span class="title title--h2 title--sandal">
+              выбирают нас?</span>
+            </h2>
+          </div>
+          <div class="advantages__numbers">
+            <span class="advantages__numbersCurrent text js-advantages-current">01</span>
+            <span class="advantages__numbersTotal text js-advantages-total">04</span>
+          </div>
+        </div>
+
+        <div class="advantages__central">
+          <div class="advantages__items js-advantages-images">
+            <div class="advantages__item">
+              <img
+                src="img/advantages-img-1.jpg"
+                srcset="
+                      img/advantages-img-1.jpg 1x,
+                      img/advantages-img-1-retina.jpg 2x
+                    "
+                alt=""
+                class="advantages__itemImg"
+              />
+            </div>
+            <div class="advantages__item">
+              <img
+                src="img/advantages-img-2.png"
+                srcset="
+                      img/advantages-img-2.png 1x,
+                      img/advantages-img-2.png 2x
+                    "
+                alt=""
+                class="advantages__itemImg"
+              />
+            </div>
+            <div class="advantages__item">
+              <img
+                src="img/advantages-img-3.png"
+                srcset="
+                      img/advantages-img-3.png 1x,
+                      img/advantages-img-3.png 2x
+                    "
+                alt=""
+                class="advantages__itemImg"
+              />
+            </div>
+            <div class="advantages__item">
+              <img
+                src="img/advantages-img-4.png"
+                srcset="
+                      img/advantages-img-4.png 1x,
+                      img/advantages-img-4.png 2x
+                    "
+                alt=""
+                class="advantages__itemImg"
+              />
+            </div>
+          </div>
+          <svg class="advantages__circleAnimated advantages__circleAnimated--active js-advantages-circle">
+            <use href="./spritemap.svg#icon-animated-circle-slider" />
+          </svg>
+        </div>
+
+        <div class="advantages__textItems js-advantages-items">
+          <div class="advantages__textItem advantages__textItem--active">
+            <h3 class="advantages__textItemTitle title title--h3">
+              Ваш успех&nbsp;&mdash; наш успех
+            </h3>
+            <p class="advantages__textItemText text">
+              Мы&nbsp;гибко подходим к&nbsp;реализации ваших пожеланий, вместе
+              прорабатываем каждый шаг, создавая единую команду. Наши обещания
+              вам&nbsp;&mdash; слышать, обсуждать, советовать&nbsp;и, самое главное, быть
+              настоящим партнером на&nbsp;всем нашем совместном пути.
+            </p>
+          </div>
+          <div class="advantages__textItem">
+            <h3 class="advantages__textItemTitle title title--h3">
+              Ваш успех&nbsp;&mdash; наш успех
+            </h3>
+            <p class="advantages__textItemText text">
+              Создавая единую команду. Наши обещания
+              вам&nbsp;&mdash; слышать, обсуждать, советовать&nbsp;и, самое главное, быть
+              настоящим партнером на&nbsp;всем нашем совместном пути.
+            </p>
+          </div>
+          <div class="advantages__textItem">
+            <h3 class="advantages__textItemTitle title title--h3">
+              Ваш успех&nbsp;&mdash; наш успех
+            </h3>
+            <p class="advantages__textItemText text">
+              Наши обещания
+              вам&nbsp;&mdash; слышать, обсуждать, советовать&nbsp;и, самое главное, быть
+              настоящим партнером на&nbsp;всем нашем совместном пути.
+            </p>
+          </div>
+          <div class="advantages__textItem">
+            <h3 class="advantages__textItemTitle title title--h3">
+              Ваш успех&nbsp;&mdash; наш успех
+            </h3>
+            <p class="advantages__textItemText text">
+              Мы&nbsp;гибко подходим к&nbsp;реализации ваших пожеланий, вместе
+              прорабатываем каждый шаг, создавая единую команду.
+            </p>
+          </div>
+        </div>
+
+        <div class="advantages__arrows arrows arrows--xl">
+          <div class="circleArrow circleArrow--xl circleArrow--left js-advantages-prev">
+            <svg class="circleArrow__icon">
+              <use href="./spritemap.svg#icon-arrow-circle" />
+            </svg>
+          </div>
+          <div class="circleArrow circleArrow--xl circleArrow--right js-advantages-next">
+            <svg class="circleArrow__icon">
+              <use href="./spritemap.svg#icon-arrow-circle" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container goToConfigurator">
+    <div class="container__row goToConfigurator__row">
+      <div class="goToConfigurator__wrapper">
+        <div class="goToConfigurator__info">
+          <h2 class="goToConfigurator__title title title--h2">
+            <span class="sandal">Конструктор</span> <br />стрелкового комплекса
+          </h2>
+          <p class="goToConfigurator__text text">
+            Пройдите 6&nbsp;шагов и&nbsp;спроектируйте стрелковый комплекс по&nbsp;вашим параметрам. Отправьте заявку и&nbsp;наши
+            менеджеры
+            свяжутся с&nbsp;вами для уточнения подробностей.
+          </p>
+        </div>
+        <div class="goToConfigurator__button">
+          <a href="configurator.html" class="buttonDouble buttonDouble--s">
+              <span class="buttonDouble__arrowWrapper">
+                  <svg class="buttonDouble__arrowIcon">
+                     <use href="./spritemap.svg#icon-buttonDouble-arrow" />
+                  </svg>
+              </span>
+              <span class="buttonDouble__text text">Спроектировать</span>
+          </a>
+        </div>
+        <div class="goToConfigurator__img">
+          <img
+            src="img/goToConfigurator-img.png"
+            srcset="
+                  img/goToConfigurator-img.png        1x,
+                  img/goToConfigurator-img-retina.png 2x
+                "
+            alt="Comp"
+            class="goToConfigurator__imgItem"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <div class="container__row footer__row">
+      <div class="footer__top">
+        <div class="footer__logoWrapper">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logoIcon">
+              <use href="./spritemap.svg#icon-logo" />
+            </svg>
+          </a>
+          <a href="https://clubfireline.ru" class="footer__logo footer__logo--fireline" target="_blank">
+            <svg class="footer__logoIcon">
+              <use href="./spritemap.svg#icon-logo-fireline" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer__columns">
+          <div class="footer__column footer__column--menu">
+            <span class="footer__columnTitle text">Меню</span>
+            <div class="footer__links">
+              <a href="/about.html" class="footer__link text">О&nbsp;компании</a>
+              <a href="/solutions.html" class="footer__link text">Решения</a>
+              <a href="/catalog.html" class="footer__link text">Продукция</a>
+              <a href="/constructor.html" class="footer__link text">Конструктор тира</a>
+              <a href="/news.html" class="footer__link text">Новости</a>
+              <a href="/contacts.html" class="footer__link text">Контакты</a>
+              <a href="/warranty.html" class="footer__link text">Гарантия и&nbsp;сервис</a>
+            </div>
+          </div>
+          <div class="footer__column footer__column--address">
+            <span class="footer__columnTitle text">Адрес</span>
+            <a href="/contacts.html" class="footer__columnItem text"
+            >101000, г. Москва <br />Лубянский проезд 27/1,
+              с.1пом.13</a
+            >
+          </div>
+          <div class="footer__column footer__column--contacts">
+            <span class="footer__columnTitle text">Контакты</span>
+            <a href="tel:79090078373" class="footer__columnItem text"
+            >+7 (909) 007- 83-73</a
+            >
+            <a href="mailto:docs@tir-x.ru" class="footer__columnItem text"
+            >docs@tir-x.ru</a
+            >
+          </div>
+        </div>
+        <div class="footer__slideUp js-slide-up">
+          <div class="circleArrow circleArrow--top">
+            <svg class="circleArrow__icon">
+              <use href="./spritemap.svg#icon-arrow-circle" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container__separator"></div>
+
+    <div class="container__row footer__bottom">
+      <div class="footer__copyright text">
+        <span>&copy;&nbsp;2022&nbsp;ООО &laquo;ТИРЭКС&raquo;</span>
+      </div>
+      <div class="footer__confidentiality text">Конфиденциальность</div>
+      <div class="footer__madeBy">
+        <a href="https://finik.org/" class="footer__madeByText text">
+          Сайт сделан в&nbsp;<span>FINIK</span></a
+        >
+      </div>
+    </div>
+  </footer>
+
+  <section class="container preloader js-preloader">
+    <div class="container__row preloader__row">
+      <div class="preloader__wrapper">
+        <div class="preloader__text js-preloader-text">
+          <div class="preloader__number">
+            <span class="preloader__numberDigit js-current-percent">0</span>
+          </div>
+          <div class="preloader__percent">%</div>
+        </div>
+        <div class="preloader__progressLine">
+          <div class="preloader__progressLineCurrent js-preloader-progress-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modals js-modals">
+    <div class="modals__item" id="consultation">
+      <div class="container consultation">
+        <div class="container__row consultation__row">
+          <div class="consultation__wrapper">
+            <h1 class="consultation__title title">Получить&nbsp;<br /><span class="title title--sandal">консультацию</span></h1>
+            <form action="#" class="consultation__form form js-form">
+
+              <div class="form__inputs form__inputs--start">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="type"
+                  id="legal"
+                  data-validation="radio"
+                />
+                <label class="text" for="legal">
+                  Физическое лицо
+                </label>
+
+                <input
+                  type="radio"
+                  class="radio"
+                  name="type"
+                  id="physic"
+                  data-validation="radio"
+                />
+                <label class="text" for="physic">
+                  Юрилическое лицо
+                </label>
+              </div>
+              <div class="form__inputs form__inputs--select">
+                <div class="form__inputWrapper">
+                  <label for="select">Выбрать услугу</label>
+                  <select
+                    id="select"
+                    class="select select--hidden text text--fz20"
+                  >
+                    <option value="Стрелковые объекты под ключ">
+                      Стрелковые объекты под ключ
+                    </option>
+                    <option value="Оснащение стрелковых клубов">
+                      Оснащение стрелковых клубов
+                    </option>
+                    <option value="Управление стрелковыми клубами">
+                      Управление стрелковыми клубами
+                    </option>
+                    <option value="Реконструкция/модернизация существующего тира">
+                      Реконструкция/модернизация существующего тира
+                    </option>
+                  </select>
+                  <div class="select text text--fz20 js-select">
+                    <div class="select__value js-selected-value">
+                      Стрелковые объекты под ключ
+                    </div>
+                    <div class="select__options js-select-options">
+                      <div class="select__option">
+                        Стрелковые объекты под ключ
+                      </div>
+                      <div class="select__option">
+                        Оснащение стрелковых клубов
+                      </div>
+                      <div class="select__option">
+                        Управление стрелковыми клубами
+                      </div>
+                      <div class="select__option">
+                        Реконструкция/модернизация существующего тира
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__inputs">
+                <div class="form__inputWrapper">
+                  <input
+                    type="text"
+                    class="input"
+                    id="name"
+                    name="name"
+                    placeholder="Имя*"
+                    data-validation="required"
+                    minlength="2"
+                  />
+                  <label for="name">Имя*</label>
+                </div>
+<!--                <div class="form__inputWrapper">-->
+<!--                  <input-->
+<!--                    type="text"-->
+<!--                    class="input"-->
+<!--                    id="company"-->
+<!--                    name="company"-->
+<!--                    placeholder="Юр.лицо Физ.лицо"-->
+<!--                    data-validation="required"-->
+<!--                    minlength="2"-->
+<!--                  />-->
+<!--                  <label for="company">Юр.лицо Физ.лицо</label>-->
+<!--                </div>-->
+              </div>
+
+              <div class="form__inputs">
+                <div class="form__inputWrapper">
+                  <input
+                    type="text"
+                    class="input"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон*"
+                    data-validation="required" minlength="10"
+                  />
+                  <label for="phone">Телефон*</label>
+                </div>
+                <div class="form__inputWrapper">
+                  <input
+                    type="text"
+                    class="input"
+                    id="mail"
+                    name="mail"
+                    placeholder="E-mail*"
+                    data-validation="email"
+                  />
+                  <label for="mail">E-mail</label>
+                </div>
+              </div>
+
+              <div class="form__inputs form__inputs--withButton">
+                <div class="form__button js-submit-button">
+                  <a class="buttonDouble buttonDouble--smooth buttonDouble--xxl">
+                      <span class="buttonDouble__arrowWrapper">
+                        <svg class="buttonDouble__arrowIcon">
+                          <use href="./spritemap.svg#icon-buttonDouble-arrow" />
+                        </svg>
+                      </span>
+                    <span class="buttonDouble__text text">Получить консультацию</span>
+                  </a>
+                </div>
+
+                <div class="form__checkboxWrapper">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__element"
+                      id="checkbox"
+                      data-validation="checkbox"
+                    />
+                    <label class="checkbox__label text" for="checkbox">
+                      Я соглашаюсь на обработку своих
+                      <a href="#" class="checkbox__personalData">
+                        персональных данных.</a
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="consultation__close js-close-modals">
+          <svg class="consultation__closeIcon">
+            <use href="./spritemap.svg#icon-close-popUp" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cookie js-cookie">
+    <p class="cookie__text">
+      Наш сайт использует <a href="#" class="cookie__link">cookies</a>
+    </p>
+    <button class="cookie__button js-cookie-accept">Понятно</button>
+  </section>
+</div>
+</body>
+</html>

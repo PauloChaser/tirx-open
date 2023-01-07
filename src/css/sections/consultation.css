@@ -1,0 +1,128 @@
+.consultation {
+  width: 1380px;
+  height: 900px;
+  background-color: var(--bg);
+  padding: 120px 160px 80px 160px;
+  background-image: url("img/consultation-bg.png");
+  background-position: left 46px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.consultation__row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.consultation__wrapper {
+  width: 100%;
+}
+
+.consultation__close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.consultation__closeIcon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  transition: fill 200ms ease;
+}
+
+.consultation__close:hover .consultation__closeIcon {
+  fill: var(--sandal);
+}
+
+.consultation__title {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 1440px) {
+  .consultation {
+    width: 1242px;
+    height: 810px;
+    padding: 80px 120px 80px 120px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .consultation {
+    width: auto;
+    height: auto;
+    padding: 80px 120px 80px 120px;
+  }
+
+  .consultation__title {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .consultation {
+    min-width: 744px;
+    min-height: 723px;
+
+    padding: 65px 40px;
+    background-image: url("img/consultation-bg.png");
+    background-size: 384px 362px;
+    background-position: 0 60px;
+    background-repeat: no-repeat;
+  }
+
+  .consultation__title {
+    margin-bottom: 93px;
+    font-size: 26px;
+  }
+
+  .consultation__title span {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .consultation {
+    min-width: 600px;
+    background-image: url("img/consultation-bg.png");
+  }
+
+  .consultation__close {
+    right: 30px;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .consultation {
+    min-width: 400px;
+    min-height: 850px;
+
+    padding: 90px 30px 60px 30px;
+    background-image: url("img/consultation-bg.png");
+    background-size: 181px 274px;
+    background-position: 0 30px;
+  }
+
+  .consultation__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .consultation {
+    min-width: 375px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .consultation {
+    min-width: 300px;
+  }
+}

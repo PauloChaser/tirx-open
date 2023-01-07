@@ -1,0 +1,391 @@
+.contacts {
+  padding: 0;
+  max-width: none;
+  padding-left: 85px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__mapImageWrapper {
+  width: 67.8%;
+  /*overflow: hidden;*/
+  position: relative;
+  pointer-events: none;
+}
+
+.contacts__mapPoint {
+  position: absolute;
+  left: 48.7%;
+  top: 43%;
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 10;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.contacts__mapPoint--hidden {
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.contacts__mapPointIcon {
+  width: 128px;
+  height: 61px;
+}
+
+.contacts__mapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contacts__mapImageZoom {
+  display: none;
+}
+
+.contacts__mapBalloon {
+  background-color: var(--sandal);
+  width: 32.2%;
+  padding-left: 109px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contacts__mapBalloonContactsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.contacts__mapBalloonContactsItem:first-child {
+  margin-bottom: 70px;
+}
+
+.contacts__mapBalloonSubtitle {
+  display: inline-block;
+
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.5;
+
+  margin-bottom: 25px;
+}
+
+.contacts__mapBalloonLink {
+  text-decoration: none;
+
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  transition: opacity 200ms ease;
+}
+
+.contacts__mapBalloonLink--mail {
+  margin-top: 15px;
+}
+
+.contacts__mapBalloonLink--address {
+  pointer-events: none;
+  line-height: 1.45;
+}
+
+.contacts__mapBalloonLink:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 2600px) {
+  .contacts__mapPoint {
+    left: 48.1%;
+    top: 43%;
+  }
+}
+
+@media screen and (max-width: 2400px) {
+  .contacts__mapPoint {
+    left: 47.9%;
+    top: 42.1%;
+  }
+}
+
+@media screen and (max-width: 2200px) {
+  .contacts__mapPoint {
+    left: 47.4%;
+    top: 41.1%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .contacts__mapPoint {
+    left: 47%;
+    top: 40.1%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .contacts__mapPoint {
+    left: 46.2%;
+    top: 39.1%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .contacts__mapPoint {
+    left: 45.9%;
+    top: 37.5%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .contacts__mapPoint {
+    left: 45.6%;
+    top: 37.1%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .contacts__mapBalloon {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contacts__mapBalloonContactsItem {
+    font-size: 20px;
+  }
+
+  .contacts__mapPoint {
+    left: 45.1%;
+    top: 36.5%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .contacts__mapPoint {
+    left: 44.8%;
+    top: 35.8%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contacts__mapPoint {
+    left: 44.5%;
+    top: 35.1%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts__mapPoint {
+    left: 44%;
+    top: 33.5%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contacts__mapPoint {
+    left: 43%;
+    top: 32.1%;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .contacts__mapBalloon {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contacts__mapBalloonContactsItem {
+    font-size: 18px;
+  }
+
+  .contacts__mapBalloonContactsItem:first-child {
+    margin-bottom: 50px;
+  }
+
+  .contacts__mapBalloonSubtitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .contacts {
+    padding-left: 0;
+    height: 403px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .contacts__mapImageWrapper {
+    width: 51%;
+    pointer-events: auto;
+  }
+
+  .contacts__mapPoint {
+    left: 45.5%;
+    top: 40.1%;
+  }
+
+  .contacts__mapPointIcon {
+    width: 80px;
+    height: 38px;
+  }
+
+  .contacts__mapImageZoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(51% - 60px);
+    bottom: 20px;
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color 200ms ease;
+  }
+
+  .contacts__mapImageZoom:hover {
+    background-color: var(--sandal);
+  }
+
+  .contacts__mapImageZoomIcon {
+    width: 17px;
+    height: 17px;
+    fill: var(--gray);
+  }
+
+  .contacts__mapImageZoom:hover .contacts__mapImageZoomIcon {
+    fill: white;
+  }
+
+  .contacts__mapBalloon {
+    width: 49%;
+    padding-left: 57px;
+    padding-right: 40px;
+  }
+
+  .contacts__mapBalloonContactsItem {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contacts__mapPoint {
+    left: 44.5%;
+    top: 40.1%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contacts__mapPoint {
+    left: 44.1%;
+    top: 40.1%;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .contacts__mapBalloon {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contacts {
+    padding-left: 0;
+    height: auto;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .contacts__mapImageWrapper {
+    width: 100%;
+    min-height: 357px;
+  }
+
+  .contacts__mapPoint {
+    left: 46%;
+    top: 38.5%;
+  }
+
+  .contacts__mapImageZoom {
+    left: calc(100% - 60px);
+  }
+
+  .contacts__mapBalloon {
+    width: 100%;
+    padding: 70px 30px 50px;
+  }
+
+  .contacts__mapBalloonContactsItem {
+    font-size: 16px;
+  }
+
+  .contacts__mapBalloonContactsItem:first-child {
+    margin-bottom: 50px;
+  }
+
+  .contacts__mapBalloonSubtitle {
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+
+  .contacts__mapBalloonLink--mail {
+    margin-top: 15px;
+  }
+
+  .contacts__mapBalloonLink--address {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contacts__mapPoint {
+    left: 45%;
+    top: 38.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contacts__mapPoint {
+    left: 44.5%;
+    top: 38.5%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contacts__mapPoint {
+    left: 43.7%;
+    top: 38.5%;
+  }
+}

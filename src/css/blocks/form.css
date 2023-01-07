@@ -1,0 +1,236 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.form__inputs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.form__inputs--start {
+  justify-content: flex-start;
+}
+
+.form__inputs--small {
+  margin-bottom: 30px;
+}
+
+.form__inputs:last-child {
+  margin-bottom: 0;
+}
+
+.form__inputs--select {
+  margin-bottom: 70px;
+}
+
+.form--column .form__inputs--select {
+  margin-bottom: 30px;
+}
+
+/*.form__inputWrapper {*/
+/*    width: 100%;*/
+/*    background-color: transparent;*/
+/*}*/
+
+.form__inputWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.form__inputWrapper .input:not(:placeholder-shown) + label,
+.form__inputWrapper .input:focus + label {
+  transform: translateY(-20px);
+  font-size: 14px;
+}
+
+.form__inputs--small .form__inputWrapper .input:not(:placeholder-shown) + label,
+.form__inputs--small .form__inputWrapper .input:focus + label {
+  transform: translateY(-16px);
+  font-size: 14px;
+}
+
+.form__inputWrapper:not(:first-child) {
+  margin-left: 30px;
+}
+
+.form__inputWrapper label {
+  width: 100%;
+  display: inline-block;
+  margin-top: 19px;
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #eeeeee;
+  opacity: 0.5;
+  pointer-events: none;
+
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+
+  transition: transform 100ms ease, font-size 100ms ease;
+}
+
+.form__inputs--select .form__inputWrapper label {
+  position: static;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.form__inputs--select .form__inputWrapper--small label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.form__inputs--small .form__inputWrapper label {
+  font-size: 16px;
+  bottom: 15px;
+  margin-top: 10px;
+}
+
+.form__button {
+  cursor: pointer;
+  width: 50%;
+}
+
+.form__button--full {
+  width: 100%;
+}
+
+.form__button .buttonDouble {
+  width: 100%;
+  cursor: pointer;
+}
+
+.form__checkboxWrapper {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.form__checkboxWrapper--small {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1021px) {
+  .form__inputs {
+    margin-bottom: 40px;
+  }
+
+  .form__inputs--withButton {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+
+  .form__inputs--select {
+    margin-bottom: 60px;
+  }
+
+  .form__inputWrapper .input:not(:placeholder-shown) + label,
+  .form__inputWrapper .input:focus + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+  }
+
+  .form__inputWrapper:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .form__inputWrapper label {
+    margin-top: 19px;
+    font-size: 16px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+
+    transition: all 200ms ease;
+  }
+
+  .form__inputs--select .form__inputWrapper label {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .form__inputs--select .form__inputWrapper--small label {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .form__inputs--small .form__inputWrapper label {
+    font-size: 16px;
+    bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .form__button {
+    width: 100%;
+  }
+
+  .form__checkboxWrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .form__checkboxWrapper--small {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form__inputs {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .form__inputs--withButton {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -5px;
+  }
+
+  .form__inputs--select {
+    margin-bottom: 60px;
+  }
+
+  .form__inputs--select .form__inputWrapper {
+    margin-bottom: 0;
+  }
+
+  .form__inputWrapper:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .form__inputWrapper {
+    margin-bottom: 40px;
+  }
+
+  .form__inputWrapper label {
+    margin-top: 19px;
+    font-size: 16px;
+
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+  }
+
+  .form__inputs--select .form__inputWrapper label {
+    margin-bottom: 25px;
+  }
+
+  .form__checkboxWrapper {
+    margin-bottom: 25px;
+  }
+}

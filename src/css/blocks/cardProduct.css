@@ -1,0 +1,171 @@
+.cardProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--gray);
+  padding: 30px;
+  margin: 30px;
+  height: 490px;
+
+  position: relative;
+
+  transition: margin 200ms ease, height 200ms ease;
+}
+
+.cardProduct__button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition: opacity 300ms ease 200ms, transform 200ms ease 200ms;
+}
+
+.cardProduct:hover {
+  margin: 0;
+  height: 550px;
+}
+
+.cardProduct:hover .cardProduct__button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cardProduct__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.cardProduct__title--noWrap {
+  white-space: nowrap;
+}
+
+.cardProduct__img {
+  overflow: hidden;
+  margin-bottom: 50px;
+  justify-self: flex-end;
+  align-self: center;
+}
+
+.cardProduct__img img {
+  object-fit: cover;
+}
+
+.cardProduct__imgItem {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardProduct__info {
+  margin: 0;
+  padding: 0;
+  justify-self: flex-end;
+}
+
+.cardProduct__infoHeading {
+  color: rgba(238, 238, 238, 0.5);
+}
+
+@media screen and (max-width: 1440px) {
+  .cardProduct {
+    padding: 30px;
+    margin: 30px;
+    height: 360px;
+  }
+
+  .cardProduct:hover {
+    height: 420px;
+  }
+
+  .cardProduct__title {
+    /*line-height: 1.4;*/
+    /*font-size: px;*/
+  }
+
+  .cardProduct__img {
+    max-height: 60%;
+    margin-bottom: 32px;
+  }
+
+  .cardProduct__img img {
+    height: 100%;
+  }
+
+  .cardProduct__info {
+    line-height: 1.45;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cardProduct {
+    padding: 20px;
+    height: 360px;
+  }
+
+  .cardProduct__title {
+    font-size: 16px;
+  }
+
+  .cardProduct__info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .cardProduct {
+    padding: 25px 30px;
+    height: 360px;
+    margin: 10px;
+  }
+
+  .cardProduct:hover {
+    height: 380px;
+  }
+
+  .cardProduct__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .cardProduct__img {
+    max-height: 75%;
+  }
+
+  .cardProduct__info {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cardProduct__img {
+    max-height: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardProduct {
+    padding: 25px;
+    height: 360px;
+    margin: 0;
+  }
+
+  .cardProduct:hover {
+    height: 360px;
+  }
+
+  .cardProduct__title {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+
+  .cardProduct__img {
+    max-height: 57%;
+  }
+}

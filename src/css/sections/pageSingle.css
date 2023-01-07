@@ -1,0 +1,267 @@
+.pageSingle {
+  margin-bottom: 200px;
+}
+
+.pageSingle__wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.pageSingle__left {
+  width: 30%;
+}
+
+.pageSingle__date,
+.pageSingle__city {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.pageSingle__socials {
+  display: flex;
+}
+
+.pageSingle__socialsItem {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(238, 238, 238, 0.35);
+  border-radius: 50%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.pageSingle__socialsItemIcon {
+  fill: var(--white-dark);
+  transition: fill 400ms ease 400ms;
+}
+
+.pageSingle__socialsItemIcon--inst {
+  width: 25px;
+  height: 25px;
+}
+
+.pageSingle__socialsItemIcon--fb {
+  width: 16px;
+  height: 32px;
+}
+
+.pageSingle__socialsItemIcon--twit {
+  width: 30px;
+  height: 25px;
+}
+
+.pageSingle__socialsItemIconCircle {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 56px;
+  height: 56px;
+
+  transform: rotate(-90deg);
+  stroke: var(--sandal);
+  /*stroke-width: 1px;*/
+  stroke-dasharray: 176;
+  stroke-dashoffset: 176;
+  transition: stroke-dashoffset 800ms ease;
+  /*z-index: 1;*/
+}
+
+.pageSingle__socialsItem:hover .pageSingle__socialsItemIcon {
+  fill: var(--sandal);
+}
+
+.pageSingle__socialsItem:hover .pageSingle__socialsItemIconCircle {
+  stroke-dashoffset: 0;
+}
+
+.pageSingle__right {
+  width: 70%;
+}
+
+.pageSingle__content {
+  padding-left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.pageSingle__contentTitle {
+}
+
+.pageSingle__content h3 {
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--white-dark);
+
+  max-width: 75%;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.pageSingle__content h3 span {
+  color: var(--sandal);
+}
+
+.pageSingle__content p {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--white-dark);
+
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.pageSingle__content p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .pageSingle__content h3 {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 1021px) {
+  .pageSingle {
+    margin-bottom: 120px;
+  }
+
+  .pageSingle__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .pageSingle__left {
+    width: auto;
+  }
+
+  .pageSingle__date,
+  .pageSingle__city {
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  .pageSingle__socialsItem {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pageSingle__socialsItemIcon--inst {
+    width: 22px;
+    height: 22px;
+  }
+
+  .pageSingle__socialsItemIcon--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .pageSingle__socialsItemIcon--twit {
+    width: 27px;
+    height: 22px;
+  }
+
+  .pageSingle__socialsItemIconCircle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pageSingle__right {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+
+  .pageSingle__content h3 {
+    margin-bottom: 30px;
+    letter-spacing: 0.01em;
+    max-width: 100%;
+
+    font-size: 20px;
+  }
+
+  .pageSingle__content {
+    padding-left: 57px;
+    border-left: none;
+  }
+
+  .pageSingle__content p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pageSingle__right {
+    width: 100%;
+  }
+
+  .pageSingle__content {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageSingle {
+    margin-bottom: 80px;
+  }
+
+  .pageSingle__date,
+  .pageSingle__city {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .pageSingle__socialsItem {
+    width: 46px;
+    height: 46px;
+  }
+
+  .pageSingle__socialsItemIcon--inst {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pageSingle__socialsItemIcon--fb {
+    width: 13px;
+    height: 26px;
+  }
+
+  .pageSingle__socialsItemIcon--twit {
+    width: 25px;
+    height: 20px;
+  }
+
+  .pageSingle__socialsItemIconCircle {
+    width: 46px;
+    height: 46px;
+  }
+
+  .pageSingle__right {
+    margin-bottom: 40px;
+  }
+
+  .pageSingle__content h3 {
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+
+  .pageSingle__content p {
+    margin: 0 0 20px;
+  }
+}

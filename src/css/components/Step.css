@@ -1,0 +1,359 @@
+.Step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Step__panel {
+  padding: 30px 10px 30px 60px;
+}
+
+.Step__counter {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 100%;
+  color: #eeeeee;
+  opacity: 0.6;
+
+  margin-bottom: 25px;
+}
+
+.Step__title {
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #eeeeee;
+  margin-bottom: 50px;
+}
+
+.Step__inputs {
+  /*todo удалить , сделано просто чтоб не слипались разные типы инпутов*/
+  margin-top: 30px;
+}
+
+.Step__inputsItemsWrapper {
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  margin-left: 44px;
+}
+
+.Step__inputsItemWrapper:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.Step__inputsItemWrapper--smallMargin:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Step__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  position: relative;
+}
+
+.Step__info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 0.45;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 12px,
+    rgba(255, 255, 255, 0.45) 12px,
+    rgba(255, 255, 255, 0.45) 24px
+  );
+}
+
+.Step__text {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.Step__textTitle {
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.Step__textDescription {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 150%;
+  color: #eeeeee;
+  opacity: 0.7;
+
+  margin-bottom: 40px;
+}
+
+.Step__image {
+  width: 100%;
+}
+
+.Step__imageItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Step__infoClose {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  /*.Step {*/
+  /*  display: flex;*/
+  /*  flex-direction: column;*/
+  /*  justify-content: space-between;*/
+  /*}*/
+
+  .Step__panel {
+    /*padding-top: 30px;*/
+    padding-left: 40px;
+    /*padding-bottom: 30px;*/
+  }
+
+  /*.Step__counter {*/
+  /*  font-family: Stem, sans-serif;*/
+  /*  font-style: normal;*/
+  /*  font-weight: 350;*/
+  /*  font-size: 18px;*/
+  /*  line-height: 100%;*/
+  /*  color: #eeeeee;*/
+  /*  opacity: 0.6;*/
+
+  /*  margin-bottom: 25px;*/
+  /*}*/
+
+  .Step__title {
+    /*font-family: "Benzin-Regular", sans-serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 24px;
+    /*line-height: 1.4;*/
+    /*letter-spacing: 0.01em;*/
+    /*text-transform: uppercase;*/
+    /*color: #eeeeee;*/
+    margin-bottom: 40px;
+  }
+
+  /*.Step__inputs {*/
+  /*  !*todo удалить , сделано просто чтоб не слипались разные типы инпутов*!*/
+  /*  margin-top: 30px;*/
+  /*}*/
+
+  /*.Step__inputsItemsWrapper {*/
+  /*  border-left: 1px solid rgba(255, 255, 255, 0.45);*/
+  /*  margin-left: 44px;*/
+  /*}*/
+
+  .Step__inputsItemWrapper:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .Step__inputsItemWrapper--smallMargin:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .Step__info {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+    padding-top: 30px;
+    /*position: relative;*/
+  }
+
+  /*.Step__info::before {*/
+  /*  content: "";*/
+  /*  position: absolute;*/
+  /*  left: 0;*/
+  /*  top: 0;*/
+  /*  width: 100%;*/
+  /*  height: 1px;*/
+  /*  opacity: 0.45;*/
+  /*  background: repeating-linear-gradient(*/
+  /*    to right,*/
+  /*    transparent,*/
+  /*    transparent 12px,*/
+  /*    rgba(255, 255, 255, 0.45) 12px,*/
+  /*    rgba(255, 255, 255, 0.45) 24px*/
+  /*  );*/
+  /*}*/
+
+  .Step__text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /*.Step__textTitle {*/
+  /*  font-family: Benzin, sans-serif;*/
+  /*  font-style: normal;*/
+  /*  font-weight: 400;*/
+  /*  font-size: 18px;*/
+  /*  line-height: 1;*/
+  /*  letter-spacing: 0.02em;*/
+  /*  color: #ffffff;*/
+
+  /*  margin-bottom: 20px;*/
+  /*}*/
+
+  /*.Step__textDescription {*/
+  /*  font-family: Stem, sans-serif;*/
+  /*  font-style: normal;*/
+  /*  font-weight: 350;*/
+  /*  font-size: 16px;*/
+  /*  line-height: 150%;*/
+  /*  color: #eeeeee;*/
+  /*  opacity: 0.7;*/
+
+  /*  margin-bottom: 40px;*/
+  /*}*/
+
+  /*.Step__image {*/
+  /*  width: 100%;*/
+  /*}*/
+
+  /*.Step__imageItem {*/
+  /*  width: 100%;*/
+  /*  height: 100%;*/
+  /*  object-fit: cover;*/
+  /*  object-position: center;*/
+  /*}*/
+}
+
+@media screen and (max-width: 1021px) {
+  .Step {
+    flex-direction: row;
+  }
+
+  .Step__panel {
+    width: calc(50% - 20px);
+    padding-top: 0;
+  }
+
+  .Step__counter {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .Step__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .Step__inputsItemWrapper--smallMargin:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .Step__inputsItemsWrapper {
+    margin-left: 38px;
+  }
+
+  .Step__info {
+    width: 50%;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 35px;
+    padding-right: 40px;
+  }
+
+  .Step__info::before {
+    display: none;
+  }
+
+  .Step__text {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Step {
+    flex-direction: column;
+  }
+
+  .Step__panel {
+    width: 95%;
+    /*padding-top: 0;*/
+  }
+
+  .Step__counter {
+    /*font-size: 16px;*/
+    margin-bottom: 15px;
+  }
+
+  .Step__title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  /*.Step__inputsItemWrapper--smallMargin:not(:last-child) {*/
+  /*  margin-bottom: 25px;*/
+  /*}*/
+
+  /*.Step__inputsItemsWrapper {*/
+  /*  margin-left: 38px;*/
+  /*}*/
+
+  .Step__info {
+    /*@todo remove*/
+    display: none;
+
+    width: calc(100% - 60px);
+    align-self: center;
+    /*flex-direction: column-reverse;*/
+    /*justify-content: flex-end;*/
+    padding-top: 0;
+    padding-right: 0;
+    background-color: var(--gray);
+  }
+
+  .Step__infoClose {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .Step__infoCloseIcon {
+    width: 24px;
+    height: 24px;
+    fill: var(--sandal);
+
+    transition: fill 200ms ease;
+  }
+
+  .Step__infoClose:hover .Step__infoCloseIcon {
+    fill: white;
+  }
+
+  .Step__info::before {
+    display: none;
+  }
+
+  .Step__text {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
+  }
+}

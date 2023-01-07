@@ -1,0 +1,114 @@
+.circleButton {
+  text-decoration: none;
+}
+
+.circleButton--expanded {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--sandal);
+  border-radius: 90px;
+  width: 56px;
+  transition: width 300ms ease;
+}
+
+.circleButton--expanded:hover {
+  width: 220px;
+}
+
+.circleButton__iconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--sandal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background-color 200ms ease;
+}
+
+.circleButton__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-dark);
+
+  transition: fill 200ms ease;
+}
+
+.circleButton:hover .circleButton__iconWrapper {
+  background-color: var(--white);
+}
+
+.circleButton:hover .circleButton__icon {
+  fill: var(--gray);
+}
+
+.circleButton__text {
+  display: inline-block;
+  color: white;
+  margin-left: 30px;
+  width: 0;
+  opacity: 0;
+  transform: translateX(-70px);
+  transition: opacity 100ms ease, width 200ms ease, transform 300ms ease;
+}
+
+.circleButton:hover .circleButton__text {
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1021px) {
+  .circleButton__iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circleButton--expanded {
+    border-radius: 90px;
+    width: 50px;
+    transition: width 300ms ease;
+  }
+
+  .circleButton--expanded:hover {
+    width: 200px;
+  }
+
+  .circleButton__text {
+    margin-left: 20px;
+  }
+
+  .circleButton__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circleButton__iconWrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circleButton--expanded {
+    border-radius: 90px;
+    width: 40px;
+    transition: width 300ms ease;
+  }
+
+  .circleButton--expanded:hover {
+    width: 190px;
+  }
+
+  .circleButton__text {
+    margin-left: 20px;
+  }
+
+  .circleButton__icon {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,40 @@
+.text {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 1;
+
+  color: var(--white-dark);
+}
+
+.text--fz20 {
+  font-size: 20px;
+}
+
+.text--fz22 {
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+@media screen and (max-width: 1440px) {
+  .text {
+  }
+
+  .text--fz20 {
+  }
+
+  .text--fz22 {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 16px;
+  }
+}

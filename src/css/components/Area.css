@@ -1,0 +1,137 @@
+.Area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  position: relative;
+  color: #5e5e5e;
+}
+
+.Area__gallery,
+.Area__catcher,
+.Area__antiRicochet,
+.Area__target,
+.Area__design {
+  position: absolute;
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 300ms ease;
+}
+
+.Area__gallery {
+  z-index: 1;
+  background: #808080;
+  width: 100%;
+  height: 100%;
+
+  font-size: 100vh;
+  overflow: hidden;
+}
+.Area__catcher {
+  z-index: 2;
+  background: #394f43;
+  color: #ffffff;
+}
+.Area__antiRicochet {
+  z-index: 3;
+}
+.Area__target {
+  z-index: 4;
+
+  background: #8d1515;
+  color: #ffffff;
+}
+
+.Area__design {
+  z-index: 5;
+}
+
+.Area__gallery--1 {
+
+}
+.Area__gallery--2 {
+
+}
+.Area__gallery--3 {
+
+}
+
+.Area__catcher--blinds {
+  height: 300px;
+  width: 70%;
+}
+
+.Area__catcher--bulk {
+  margin-top: 200px;
+  height: 200px;
+  width: 85%;
+}
+.Area__catcher--snail {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+}
+
+.Area__antiRicochet {
+  width: 100%;
+  height: 100%;
+  border: 50px solid #222;
+  align-items: flex-start;
+  color: #222;
+}
+
+.Area__target--mobile {
+  top: 65%;
+
+  width: 30%;
+  height: 15%;
+}
+.Area__target--front {
+  top: 25%;
+
+  width: 50%;
+  height: 15%;
+}
+.Area__target--rail {
+  top: 10%;
+
+  width: 80%;
+  height: 10%;
+}
+
+.Area__design--wall {
+  height: 50%;
+  width: 100%;
+
+  top: 0;
+}
+
+.Area__design--floor {
+  height: 50%;
+  width: 100%;
+
+  bottom: 0;
+  top: 50%;
+}
+
+.Area__design--wall::after,
+.Area__design--floor::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url("./img/mil_bg.jpeg");
+  background-size: cover;
+  opacity: 0.15;
+}

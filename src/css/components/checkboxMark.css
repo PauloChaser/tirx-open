@@ -1,0 +1,110 @@
+.checkboxMark {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkboxMark {
+  display: flex;
+}
+
+.checkboxMark {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.checkboxMark + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 100%;
+  color: #eeeeee;
+
+  transition: color 200ms ease;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.checkboxMark + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid var(--gray);
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: transparent;
+
+  transition: border-color 200ms ease, background 200ms ease;
+}
+
+/* стили при наведении курсора на checkbox */
+.checkboxMark:not(:disabled):not(:checked) + label:hover::before {
+  border-color: var(--sandal);
+}
+
+.checkboxMark:not(:disabled):not(:checked) + label:hover {
+  color: var(--sandal);
+}
+
+/*.checkboxMark:not(:disabled):active + label {*/
+/*  color: var(--sandal);*/
+/*}*/
+
+/* стили для активного чекбокса (при нажатии на него) */
+/*.checkboxMark:not(:disabled):active + label::before {*/
+/*  border-color: var(--sandal);*/
+/*}*/
+
+.checkboxMark:checked + label {
+  color: var(--sandal);
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.checkboxMark:checked + label::before {
+  border-color: var(--sandal);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMyAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuMTA1MjcgOC4yMjgxNkw0LjQ1MzQ1IDguNTY1NjNMNC44MDE0NSA4LjIyNzk2TDEyLjI4MDMgMC45NzEwMzlMMTIuMjgyNiAwLjk3MzI2TDQuNDUzNDEgOC41ODVMMC43MTcyOSA0Ljk0OTUxTDAuNzE5OTMxIDQuOTQ2OTRMNC4xMDUyNyA4LjIyODE2WiIgc3Ryb2tlPSIjQUM4QjY1Ii8+Cjwvc3ZnPgo=");
+}
+
+@media screen and (max-width: 1440px) {
+  .checkboxMark + label {
+    /*display: inline-flex;*/
+    /*align-items: center;*/
+    /*user-select: none;*/
+    /*cursor: pointer;*/
+
+    /*font-family: Stem, sans-serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 350;*/
+    font-size: 18px;
+    line-height: 1.2;
+    /*color: #ffffff;*/
+
+    /*transition: color 200ms ease;*/
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .checkboxMark + label {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .checkboxMark + label::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 19px;
+  }
+}

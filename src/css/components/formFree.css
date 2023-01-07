@@ -1,0 +1,221 @@
+.formFree {
+}
+
+.formFree__inputs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.formFree__inputs--withButton {
+  margin-top: 50px;
+}
+
+.formFree__inputs:last-child {
+  margin-bottom: 0;
+}
+
+/*.formFree__inputs--select {*/
+/*  margin-bottom: 70px;*/
+/*}*/
+
+.formFree--column .formFree__inputs--select {
+  margin-bottom: 30px;
+}
+
+/*.formFree__inputWrapper {*/
+/*    width: 100%;*/
+/*    background-color: transparent;*/
+/*}*/
+
+.formFree__inputWrapper {
+  width: 100%;
+  position: relative;
+}
+
+/*.formFree__inputWrapper .input:not(:placeholder-shown) + label,*/
+/*.formFree__inputWrapper .input:focus + label {*/
+/*  transform: translateY(-20px);*/
+/*  font-size: 18px;*/
+/*}*/
+
+/*.formFree__inputs--small*/
+/*  .formFree__inputWrapper*/
+/*  .input:not(:placeholder-shown)*/
+/*  + label,*/
+/*.formFree__inputs--small .formFree__inputWrapper .input:focus + label {*/
+/*  transform: translateY(-16px);*/
+/*  font-size: 16px;*/
+/*}*/
+
+.formFree__inputWrapper:not(:first-child) {
+  margin-left: 30px;
+}
+
+.formFree__inputWrapper--single:not(:first-child) {
+  margin-left: 0;
+}
+
+.formFree__inputWrapper--single {
+  margin-left: 0;
+}
+
+.formFree__inputWrapper label {
+  /*width: 100%;*/
+  /*display: inline-block;*/
+
+  /*font-family: Stem, sans-serif;*/
+  /*font-style: normal;*/
+  /*font-weight: 350;*/
+  /*font-size: 16px;*/
+  /*line-height: 1.2;*/
+  /*color: #eeeeee;*/
+  /*!*opacity: 0.5;*!*/
+
+  /*position: absolute;*/
+  /*bottom: 25px;*/
+  /*left: 25px;*/
+
+  /*transition: all 200ms ease;*/
+  display: none;
+}
+
+/*.formFree__inputs--small .formFree__inputWrapper label {*/
+/*  font-size: 16px;*/
+/*  bottom: 15px;*/
+/*  margin-top: 10px;*/
+/*}*/
+
+.formFree__button {
+  cursor: pointer;
+  width: 371px;
+}
+
+.formFree__button--full {
+  width: 100%;
+}
+
+.formFree__button .buttonDouble {
+  width: 100%;
+  cursor: pointer;
+}
+
+.formFree__checkboxWrapper {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.formFree__checkboxWrapper--small {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1021px) {
+  .formFree__inputs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .formFree__inputs--three {
+    flex-wrap: wrap;
+  }
+
+  .formFree__inputs--three .formFree__inputWrapper {
+    width: calc(50% - 10px);
+    position: relative;
+  }
+
+  .formFree__inputWrapper--fullTab {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .formFree__inputs--withButton {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formFree__inputWrapper:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .formFree__inputWrapper--fullTab:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .formFree__inputWrapper--single:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .formFree__inputWrapper--single {
+    margin-left: 0;
+  }
+
+  .formFree__button {
+    cursor: pointer;
+    width: 317px;
+    margin-bottom: 30px;
+  }
+
+  .formFree__button--full {
+    width: 100%;
+  }
+
+  .formFree__button .buttonDouble {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .formFree__checkboxWrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .formFree__inputs {
+    margin-bottom: 15px;
+  }
+
+  .formFree__inputs--three {
+    flex-wrap: wrap;
+  }
+
+  .formFree__inputs--three .formFree__inputWrapper {
+    width: 100%;
+    /*position: relative;*/
+  }
+
+  .formFree__inputWrapper--fullTab {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .formFree__inputs--withButton {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formFree__inputWrapper:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .formFree__inputWrapper--fullTab:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .formFree__button {
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,228 @@
+.ourProducts {
+  margin-bottom: 181px;
+  padding-top: 171px;
+  background-image: url("img/ourProducts-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.ourProducts__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.ourProducts__left {
+  width: calc(33% - 30px);
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.ourProducts__left .asideCardsInfo {
+  width: 100%;
+}
+
+.ourProducts__left .asideCardsInfo__text {
+  max-width: 75%;
+}
+
+.ourProducts__right {
+}
+
+.ourProducts__buttonTab {
+  display: none;
+}
+
+@media screen and (max-width: 1866px) {
+  .ourProducts__left .asideCardsInfo__button {
+    margin-top: 30px;
+  }
+
+  .ourProducts__left .asideCardsInfo__text {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ourProducts__left .asideCardsInfo__text {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .ourProducts__left {
+    width: calc(40% - 30px);
+    top: 0;
+  }
+
+  .ourProducts__left .asideCardsInfo__text {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .ourProducts__left {
+    width: calc(45% - 30px);
+    top: 0;
+  }
+
+  .ourProducts__left .asideCardsInfo__text {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .ourProducts__left {
+    width: calc(50% - 30px);
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .ourProducts {
+    margin-bottom: 120px;
+    padding-top: 43px;
+    background-size: 500px 472px;
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ourProducts__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourProducts__left {
+    width: auto;
+    position: static;
+    margin-bottom: 62px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .ourProducts__rightWrapper {
+    overflow-x: auto;
+  }
+
+  .ourProducts__right .cards__item {
+    margin-right: 20px;
+  }
+
+  .ourProducts__right .cards__itemTitle {
+    font-size: 18px;
+  }
+
+  .ourProducts__right .cards__item:last-child {
+    margin-right: 0;
+  }
+
+  .ourProducts__right {
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+
+  .ourProducts__rightWrapper .simplebar-scrollbar::before {
+    background-color: var(--sandal);
+    height: 3px;
+    border-radius: 0;
+  }
+
+  .ourProducts__rightWrapper .simplebar-track {
+    right: 40px;
+  }
+
+  .ourProducts__rightWrapper .simplebar-track.simplebar-horizontal {
+    left: 40px;
+    height: 3px;
+    background-color: #3d3d3d;
+  }
+
+  .ourProducts__rightWrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar {
+    height: 3px;
+    min-width: 2px;
+    top: 0;
+  }
+
+  .ourProducts__rightWrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar:before {
+    left: 1px;
+  }
+
+  .ourProducts__buttonTab {
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  .ourProducts__left .asideCardsInfo__text {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ourProducts {
+    margin-bottom: 80px;
+    padding-top: 0;
+    margin-top: 80px;
+    background-size: 285px 311px;
+    background-position: left 70px;
+    /*overflow: hidden;*/
+    /*padding-right: 0;*/
+    /*padding-left: 0;*/
+  }
+
+  /*.ourProducts__wrapper {*/
+  /*  display: flex;*/
+  /*  flex-direction: column;*/
+  /*}*/
+
+  .ourProducts__left {
+    width: 100%;
+    /*position: static;*/
+    margin-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .ourProducts__left .asideCardsInfo__text {
+    max-width: 100%;
+  }
+
+  .ourProducts__right {
+    padding-bottom: 27px;
+    padding-left: 30px;
+  }
+
+  .ourProducts__right .cards__itemTitle {
+    font-size: 16px;
+  }
+
+  .ourProducts__rightWrapper .simplebar-scrollbar::before {
+    height: 2px;
+  }
+
+  .ourProducts__rightWrapper .simplebar-track {
+    right: 30px;
+  }
+
+  .ourProducts__rightWrapper .simplebar-track.simplebar-horizontal {
+    left: 30px;
+    height: 2px;
+  }
+
+  .ourProducts__rightWrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar {
+    height: 2px;
+  }
+
+  .ourProducts__rightWrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar:before {
+    left: 0;
+  }
+}

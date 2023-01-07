@@ -1,0 +1,140 @@
+.otherLinks {
+  margin-bottom: 200px;
+}
+
+.otherLinks__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*.otherLinks__wrapper .simplebar-track.simplebar-horizontal .simplebar-scrollbar {*/
+/*  right: auto;*/
+/*  left: 0;*/
+/*  top: 2px;*/
+/*  height: 7px;*/
+/*  min-height: 0;*/
+/*  min-width: 10px;*/
+/*  width: auto;*/
+/*}*/
+
+.otherLinks__title {
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin-bottom: 90px;
+}
+
+.otherLinks__items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.otherLinks__item {
+  margin-right: 30px;
+  flex: 1 1 0;
+}
+
+.otherLinks__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1021px) {
+  .otherLinks {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 130px;
+  }
+
+  .otherLinks__wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .otherLinks__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+
+  .otherLinks__items {
+    height: 573px;
+    padding-bottom: 43px;
+    margin-left: 40px;
+  }
+
+  .otherLinks__item {
+    margin-right: 20px;
+    min-width: 379px;
+  }
+
+  .otherLinks__item:last-child {
+    margin-right: 0;
+  }
+
+  .otherLinks__wrapper .simplebar-scrollbar::before {
+    background-color: var(--sandal);
+    height: 3px;
+    border-radius: 0;
+  }
+
+  .otherLinks__wrapper .simplebar-track {
+    right: 40px;
+  }
+
+  .otherLinks__wrapper .simplebar-track.simplebar-horizontal {
+    left: 40px;
+    height: 3px;
+    background-color: #3d3d3d;
+  }
+
+  .otherLinks__wrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar {
+    height: 3px;
+    min-width: 2px;
+    top: 0;
+  }
+
+  .otherLinks__wrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar:before {
+    left: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .otherLinks {
+    margin-bottom: 100px;
+  }
+
+  .otherLinks__title {
+    font-size: 20px;
+    line-height: 1.45;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  .otherLinks__items {
+    height: 548px;
+    padding-bottom: 27px;
+    margin-left: 30px;
+  }
+
+  .otherLinks__item {
+    min-width: 315px;
+  }
+
+  .otherLinks__wrapper .simplebar-scrollbar::before {
+    height: 2px;
+  }
+
+  .otherLinks__wrapper .simplebar-track {
+    right: 30px;
+  }
+
+  .otherLinks__wrapper .simplebar-track.simplebar-horizontal {
+    left: 30px;
+    height: 2px;
+    background-color: #3d3d3d;
+  }
+}

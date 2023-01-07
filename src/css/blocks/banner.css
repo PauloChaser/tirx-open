@@ -1,0 +1,393 @@
+.banner {
+  position: relative;
+  /*justify-content: flex-start;*/
+  justify-content: center;
+  padding-right: 0;
+  margin-bottom: 100px;
+}
+
+.banner--404 {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.banner--contacts {
+  margin-bottom: 0;
+}
+
+.banner--displaced {
+  margin-bottom: 200px;
+}
+
+.banner--displacedBig {
+  margin-bottom: 138px;
+}
+
+.banner--noImage {
+  margin-bottom: 80px;
+}
+
+.banner--catalog {
+  margin-bottom: 0;
+}
+
+.banner--noMargin {
+  margin-bottom: 0;
+}
+
+.banner--noImage .container__separator {
+  width: calc(100% + 160px);
+}
+
+.banner__leftPanel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.banner--noImage .banner__leftPanel {
+  min-height: 917px;
+}
+
+/*.banner--catalog .banner__leftPanel {*/
+/*  min-height: 687px;*/
+/*}*/
+
+.banner--displaced .banner__leftPanel {
+  height: calc(100% - 168px);
+}
+
+.banner--displacedBig .banner__leftPanel {
+  height: calc(100% - 238px);
+}
+
+.banner--project .banner__leftPanel {
+  height: calc(100% - 86px);
+}
+
+.banner--product .banner__leftPanel {
+  min-height: 945px;
+}
+
+.banner__row {
+  /*padding-right: 0;*/
+  /*max-width: none;*/
+  /*max-width: 1740px;*/
+  /*padding-left: 140px;*/
+}
+
+.banner__breadcrumbs {
+  /*padding-left: 120px;*/
+}
+
+.banner__wrapper {
+  /*padding-left: 120px;*/
+  width: 100%;
+  /*padding-left: 74px;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__heading {
+  margin-bottom: 62px;
+}
+
+.banner--noImage .banner__heading {
+  margin-bottom: 70px;
+}
+
+.banner--displaced .banner__heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 90px;
+}
+
+.banner--displacedBig .banner__heading {
+  margin-bottom: 70px;
+}
+
+.banner__title {
+}
+
+.banner__headingText {
+  line-height: 1.5;
+  max-width: 460px;
+  margin: 0;
+  padding: 0;
+}
+
+.banner__headingText span {
+  color: var(--sandal);
+  text-transform: uppercase;
+}
+
+.banner__imageRow {
+  padding: 0;
+  max-width: none;
+  /*padding-left: 85px;*/
+}
+
+.banner--displaced .banner__imageRow {
+  padding-left: 0;
+}
+
+.banner__slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner__sliderArrows {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  z-index: 1;
+}
+
+.banner__img {
+  width: 100%;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.banner__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner--displaced .banner__img::after {
+  display: none;
+}
+
+.banner__imgItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*.banner__text {*/
+/*    line-height: 1.5;*/
+/*    margin: 0;*/
+/*    margin-bottom: 40px;*/
+/*    max-width: 39%;*/
+/*}*/
+@media screen and (max-width: 1740px) {
+}
+
+@media screen and (max-width: 1440px) {
+  .banner__wrapper {
+    /*padding-left: 100px;*/
+  }
+
+  .banner--displaced .banner__imageRow {
+    /*padding-left: 140px;*/
+  }
+
+  .banner__heading {
+    margin-bottom: 50px;
+  }
+
+  .banner--noImage .banner__heading {
+    margin-bottom: 50px;
+  }
+
+  .banner--noImage .banner__leftPanel {
+    max-height: 736px;
+    min-height: 736px;
+  }
+
+  /*.banner--catalog .banner__leftPanel {*/
+  /*  max-height: 625px;*/
+  /*  min-height: 589px;*/
+  /*}*/
+}
+
+@media screen and (max-width: 1320px) {
+  .banner__wrapper {
+    /*padding-left: 80px;*/
+  }
+
+  .banner__headingText {
+    max-width: 440px;
+    padding-left: 40px;
+  }
+
+  .banner--displaced .banner__imageRow {
+    /*padding-left: 120px;*/
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .banner {
+    margin-bottom: 80px;
+  }
+
+  .banner--404 {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .banner--noImage {
+    margin-bottom: 40px;
+  }
+
+  .banner--displaced {
+    margin-bottom: 50px;
+  }
+
+  .banner--contacts {
+    margin-bottom: 0;
+  }
+
+  .banner--catalog {
+    margin-bottom: 0;
+  }
+
+  .banner--project {
+    margin-bottom: 60px;
+  }
+
+  .banner--project .banner__imageRow {
+    overflow: hidden;
+  }
+
+  .banner__row {
+    padding-left: 0;
+  }
+
+  .banner__wrapper {
+    padding-left: 0;
+  }
+
+  .banner__heading {
+    margin-bottom: 62px;
+  }
+
+  .banner--noImage .banner__heading {
+    margin-bottom: 30px;
+  }
+
+  .banner--displaced .banner__heading {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .banner--project .banner__heading {
+    margin-bottom: 40px;
+  }
+
+  .banner--displaced .banner__title {
+    margin-bottom: 20px;
+  }
+
+  .banner__headingText {
+    font-size: 16px;
+    max-width: 360px;
+    padding-left: 0;
+  }
+
+  .banner__heading {
+    margin-bottom: 40px;
+  }
+
+  .banner__imageRow {
+    max-width: none;
+    padding-left: 0;
+    margin-left: -40px;
+    width: calc(100% + 40px);
+    height: 320px;
+  }
+
+  .banner--displaced .banner__imageRow {
+    padding-left: 0;
+  }
+
+  .banner--project .banner__imageRow {
+    overflow: hidden;
+  }
+
+  .banner__slider .banner__img {
+    min-height: 320px;
+  }
+
+  .banner__sliderArrows {
+    right: 40px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner--displaced {
+    margin-bottom: 40px;
+  }
+
+  .banner--404 {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .banner__wrapper {
+    /*padding-right: 30px;*/
+  }
+
+  .banner__heading {
+    margin-bottom: 30px;
+  }
+
+  .banner--displaced .banner__heading {
+    margin-bottom: 30px;
+  }
+
+  .banner--product .banner__heading {
+    margin-bottom: 0;
+    max-width: 80%;
+  }
+
+  .banner--project .banner__heading {
+    margin-bottom: 30px;
+  }
+
+  .banner--displaced .banner__title {
+    margin-bottom: 30px;
+  }
+
+  .banner__headingText {
+    max-width: none;
+  }
+
+  .banner__imageRow {
+    margin-left: -30px;
+    width: calc(100% + 30px);
+  }
+
+  .banner--project .banner__imageRow {
+    height: 280px;
+  }
+
+  .banner__slider .banner__img {
+    min-height: 280px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner__imageRow {
+    height: 280px;
+  }
+
+  .banner--project .banner__imageRow {
+    height: unset;
+  }
+}

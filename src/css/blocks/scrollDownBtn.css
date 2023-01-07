@@ -1,0 +1,62 @@
+.scrollDownBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scrollDownBtn__text {
+  margin-right: 35px;
+}
+
+.scrollDownBtn__icons {
+  position: relative;
+  width: 106px;
+  height: 106px;
+}
+
+.scrollDownBtn__iconsArrow {
+  height: 112px;
+  width: 20px;
+  position: absolute;
+  left: calc(50% - 10px);
+  transform: translateY(-50px);
+  z-index: 1;
+  transition: transform 600ms ease;
+}
+
+.scrollDownBtn__iconsCircleWrapper {
+}
+
+.scrollDownBtn__iconsCircle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 106px;
+  height: 106px;
+  stroke: #ffffff99;
+
+  stroke-dasharray: 8;
+  stroke-dashoffset: 8;
+
+  stroke-width: 2px;
+  transform: rotate(-90deg);
+
+  transition: stroke-dashoffset 600ms ease;
+}
+
+.scrollDownBtn__iconsCircle--animated {
+  stroke-dasharray: 333;
+  stroke-dashoffset: 333;
+  stroke: var(--sandal);
+}
+
+.scrollDownBtn__iconsCircleWrapper:hover .scrollDownBtn__iconsCircle {
+}
+
+.scrollDownBtn:hover .scrollDownBtn__iconsCircle--animated {
+  stroke-dashoffset: 0;
+}
+
+.scrollDownBtn:hover .scrollDownBtn__iconsArrow {
+  transform: translateY(-27px);
+}

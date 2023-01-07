@@ -1,0 +1,42 @@
+.mainMission {
+  background-image: url("img/mainMission-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 264px;
+  padding-bottom: 262px;
+}
+
+.mainMission--aboutCompany {
+  background-image: url("img/mission-aboutCompany-bg.jpg");
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainMission {
+    padding-top: 148px;
+    padding-bottom: 122px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .mainMission {
+    padding-top: 160px;
+    padding-bottom: 206px;
+  }
+
+  .mainMission--aboutCompany {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainMission {
+    padding-top: 41px;
+    padding-bottom: 5px;
+  }
+
+  .mainMission--aboutCompany {
+    margin-bottom: 80px;
+  }
+}

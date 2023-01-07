@@ -1,0 +1,215 @@
+.goToConfigurator {
+  background-image: url("img/goToConfigurator-bg.png");
+  background-repeat: no-repeat;
+  background-position: 42%;
+  background-size: 2484px 550px;
+  margin-top: 220px;
+  margin-bottom: 220px;
+}
+
+.goToConfigurator__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2.13fr;
+  grid-template-areas:
+    "text image"
+    "button image";
+}
+
+.goToConfigurator__info {
+  margin-top: 73px;
+}
+
+.goToConfigurator__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  line-height: 1.45;
+  text-transform: uppercase;
+
+  grid-area: text;
+}
+
+.goToConfigurator__text {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.goToConfigurator__button {
+  margin-top: 20px;
+  grid-area: button;
+}
+
+.goToConfigurator__img {
+  grid-area: image;
+  width: 962px;
+  height: 600px;
+  overflow: hidden;
+
+  margin-top: -61px;
+}
+
+.goToConfigurator__imgItem {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .goToConfigurator {
+    background-size: 2224px 492px;
+    margin-top: 122px;
+    margin-bottom: 210px;
+    /*padding-left: 80px;*/
+  }
+
+  .goToConfigurator__row {
+  }
+
+  .goToConfigurator__wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-areas:
+      "text image"
+      "button image";
+  }
+
+  .goToConfigurator__info {
+    margin-top: 68px;
+    width: 120%;
+  }
+
+  .goToConfigurator__title {
+    margin-bottom: 25px;
+  }
+
+  .goToConfigurator__button {
+    margin-top: 0;
+  }
+
+  .goToConfigurator__img {
+    width: 806px;
+    height: 504px;
+
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .goToConfigurator {
+    padding-bottom: 80px;
+  }
+
+  .goToConfigurator__img {
+    width: 645px;
+    height: 403px;
+    margin-top: 0;
+  }
+
+  .goToConfigurator__button {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .goToConfigurator__info {
+    width: 100%;
+  }
+
+  .goToConfigurator__img {
+    width: 580px;
+    height: 363px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .goToConfigurator {
+    margin-top: 97px;
+    margin-bottom: 111px;
+    padding-bottom: 50px;
+    background-position: 42% 0;
+    background-size: 1343px 400px;
+    /*padding-left: 40px;*/
+  }
+
+  .goToConfigurator__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "text image"
+      "button image";
+  }
+
+  .goToConfigurator__info {
+    margin-top: 0;
+    padding-top: 23px;
+    width: 105%;
+  }
+
+  .goToConfigurator__title {
+    margin-bottom: 20px;
+  }
+
+  .goToConfigurator__text {
+    font-size: 16px;
+  }
+  .goToConfigurator__button {
+    margin-top: 40px;
+  }
+
+  .goToConfigurator__img {
+    align-self: center;
+    justify-self: end;
+    width: 357px;
+    height: 223px;
+
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .goToConfigurator {
+    background-position: top;
+
+    background-size: 676px 230px;
+    margin-bottom: 100px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 40px;
+  }
+
+  .goToConfigurator__row {
+  }
+
+  .goToConfigurator__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .goToConfigurator__info {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .goToConfigurator__button {
+    order: 3;
+    margin-top: 50px;
+  }
+
+  .goToConfigurator__img {
+    align-self: flex-start;
+    justify-self: center;
+
+    width: 315px;
+    height: 197px;
+
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .goToConfigurator__button {
+    width: 100%;
+  }
+}

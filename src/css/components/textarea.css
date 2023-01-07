@@ -1,0 +1,43 @@
+.textarea {
+  width: 100%;
+  border: 1px solid #ffffff66;
+  border-radius: 2px;
+  outline: none;
+  background: transparent;
+  height: 180px;
+  padding: 25px;
+
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 120%;
+  color: #eeeeee;
+
+  resize: none;
+
+  transition: border-color 200ms ease;
+}
+
+.textarea label {
+  color: #eeeeee80;
+}
+
+.textarea:focus {
+  border-color: #ffffff;
+}
+
+@media screen and (max-width: 1021px) {
+  .textarea {
+    height: 120px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textarea {
+    height: 110px;
+    padding: 18px 20px;
+    font-size: 14px;
+  }
+}

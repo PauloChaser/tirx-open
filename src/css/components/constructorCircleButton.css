@@ -1,0 +1,188 @@
+.constructorCircleButton {
+}
+
+.constructorCircleButton__iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background-color 200ms ease;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.constructorCircleButton__icon {
+  width: 17px;
+  height: 2px;
+  background-color: var(--sandal);
+  position: relative;
+  border-radius: 1px;
+  transition: background-color 200ms ease;
+  z-index: 1;
+}
+
+.constructorCircleButton__icon::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 2px;
+  border-radius: 1px;
+  transform: rotate(90deg);
+  background-color: var(--sandal);
+
+  transition: transform 200ms ease, background-color 200ms ease;
+}
+
+.constructorCircleButton:hover .constructorCircleButton__iconWrapper {
+  background-color: var(--sandal);
+}
+
+.constructorCircleButton:hover .constructorCircleButton__icon {
+  background-color: #eeeeee;
+}
+
+.constructorCircleButton:hover .constructorCircleButton__icon::after {
+  transform: rotate(0);
+  background-color: #eeeeee;
+}
+
+.constructorCircleButton__popUp {
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  min-width: 620px;
+  transform: translateY(-50%) translateX(-15px);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 600ms ease, transform 600ms ease, z-index 300ms ease;
+}
+
+.constructorCircleButton__popUpClose {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.constructorCircleButton__popUpCloseIcon {
+  width: 17px;
+  height: 17px;
+  fill: #eeeeee;
+}
+
+.constructorCircleButton:hover .constructorCircleButton__popUp {
+  display: inline-block;
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+  z-index: 1;
+}
+
+/*.constructorCircleButton__popUp--active {*/
+/*  display: inline-block;*/
+/*}*/
+
+.constructorCircleButton__popUpInner {
+  background-color: var(--gray);
+  padding: 30px;
+}
+
+.constructorCircleButton__popUpTitle {
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.constructorCircleButton__popUpText {
+  font-family: Stem, sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1021px) {
+  .constructorCircleButton__iconWrapper {
+    width: 30px;
+    height: 30px;
+    /*border-radius: 50%;*/
+    /*background-color: #eeeeee;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-shrink: 0;*/
+    /*transition: background-color 200ms ease;*/
+    /*cursor: pointer;*/
+    /*z-index: 2;*/
+    /*position: relative;*/
+  }
+
+  .constructorCircleButton__icon {
+    width: 9px;
+    height: 1px;
+    /*background-color: var(--sandal);*/
+    /*position: relative;*/
+    border-radius: 0;
+    /*transition: background-color 200ms ease;*/
+    /*z-index: 1;*/
+  }
+
+  .constructorCircleButton__icon::after {
+    /*position: absolute;*/
+    /*content: "";*/
+    width: 9px;
+    height: 1px;
+    border-radius: 0;
+  }
+
+  .constructorCircleButton__popUp {
+    /*position: absolute;*/
+    left: 16px;
+    /*top: 50%;*/
+    min-width: 445px;
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+    display: none;
+  }
+
+  .constructorCircleButton__popUpClose {
+    width: 17px;
+    height: 17px;
+  }
+
+  .constructorCircleButton:hover .constructorCircleButton__popUp {
+    display: inline-block;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .constructorCircleButton__popUpInner {
+  }
+
+  .constructorCircleButton__popUpTitle {
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0.01em;
+    max-width: 60%;
+  }
+
+  .constructorCircleButton__popUpText {
+    max-width: 80%;
+  }
+}

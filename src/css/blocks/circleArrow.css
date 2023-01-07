@@ -1,0 +1,68 @@
+.circleArrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--white-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  transition: background-color 200ms ease;
+}
+
+.circleArrow--xl {
+  width: 72px;
+  height: 72px;
+}
+
+.circleArrow__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+  fill: var(--gray);
+  transition: fill 200ms ease;
+}
+
+.circleArrow--xl .circleArrow__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.circleArrow--top {
+  transform: rotate(-90deg);
+}
+
+.circleArrow--left {
+  transform: rotate(-180deg);
+}
+
+.circleArrow:hover {
+  background-color: var(--sandal);
+}
+
+.circleArrow:hover .circleArrow__icon {
+  fill: var(--white);
+}
+
+@media screen and (max-width: 1440px) {
+  .circleArrow--xl {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .circleArrow,
+  .circleArrow--xl {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circleArrow .circleArrow__icon,
+  .circleArrow--xl .circleArrow__icon {
+    width: 18px;
+    height: 18px;
+  }
+}

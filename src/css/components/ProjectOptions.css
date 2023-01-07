@@ -1,0 +1,117 @@
+.ProjectOptions {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.ProjectOptions__title {
+  font-family: Benzin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 0 45px;
+}
+
+.ProjectOptions__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 110px;
+}
+
+/*.ProjectOptions__item {*/
+/*  margin-right: 30px;*/
+/*}*/
+
+/*.ProjectOptions__item:nth-child(3n) {*/
+/*  margin-right: 0;*/
+/*}*/
+
+@media screen and (max-width: 1440px) {
+  .ProjectOptions {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .ProjectOptions__title {
+    /*font-family: "Benzin-Regular", sans-serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 26px;
+    /*line-height: 140%;*/
+    /*letter-spacing: 0.02em;*/
+    /*text-transform: uppercase;*/
+    /*color: #ffffff;*/
+    /*padding: 0;*/
+    margin: 0 0 35px;
+  }
+
+  .ProjectOptions__items {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*grid-column-gap: 30px;*/
+    grid-row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .ProjectOptions {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+  }
+
+  .ProjectOptions__title {
+    /*font-family: "Benzin-Regular", sans-serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 24px;
+    line-height: 1.45;
+    /*letter-spacing: 0.02em;*/
+    /*text-transform: uppercase;*/
+    /*color: #ffffff;*/
+    /*padding: 0;*/
+    margin: 0 0 40px;
+  }
+
+  .ProjectOptions__items {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: unset;
+    grid-row-gap: unset;
+  }
+
+  .ProjectOptions__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ProjectOptions {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .ProjectOptions__title {
+    /*font-family: "Benzin-Regular", sans-serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 20px;
+    margin: 0 0 30px;
+  }
+
+  .ProjectOptions__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
