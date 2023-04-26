@@ -4,7 +4,7 @@
 
 <p>Компания ТИРЭКС проектирует и строит стрелковые клубы с 2010 года. </p>
 
-![image](https://github.com/PauloChaser/tirxOpen/blob/master/tirx.gif)
+![image](https://github.com/PauloChaser/tirx-open/blob/master/tirx.gif)
 
 #### Используемые технологии:
 
